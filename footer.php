@@ -2,11 +2,25 @@
 
 				<div id="inner-footer" class="wrap clearfix">
 
-					<nav role="navigation">
-							<?php bones_footer_links(); ?>
-									</nav>
+					<div id="footer-widgets">
 
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
+						<?php if ( is_active_sidebar( 'footer' ) ) : ?>
+
+							<?php dynamic_sidebar( 'footer' ); ?>
+
+						<?php endif; ?>
+
+					</div> <!-- end #footer-widgets -->
+
+					<div id="footer-links">
+
+						<nav role="navigation">
+							<?php bones_footer_links(); ?>
+						</nav>
+
+						<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
+
+					</div> <!-- end #footer-links -->
 
 				</div> <!-- end #inner-footer -->
 
