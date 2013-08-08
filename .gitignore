@@ -6,3 +6,5 @@ Bones.esproj/Project.espressostorage
 .project
 
 .DS_Store
+
+library/scss/.sass-cache/

@@ -30,7 +30,7 @@ require_once('library/bones.php'); // if you remove this, bones will break
 	- example custom taxonomy (like categories)
 	- example custom taxonomy (like tags)
 */
-require_once('library/custom-post-type.php'); // you can disable this if you like
+// require_once('library/custom-post-type.php'); // you can disable this if you like
 /*
 3. library/admin.php
 	- removing some default WordPress dashboard widgets
@@ -38,12 +38,12 @@ require_once('library/custom-post-type.php'); // you can disable this if you lik
 	- adding custom login css
 	- changing text in footer of admin
 */
-// require_once('library/admin.php'); // this comes turned off by default
+ require_once('library/admin.php'); // this comes turned off by default
 /*
 4. library/translation/translation.php
 	- adding support for other languages
 */
-// require_once('library/translation/translation.php'); // this comes turned off by default
+ require_once('library/translation/translation.php'); // this comes turned off by default
 
 /************* THUMBNAIL SIZE OPTIONS *************/
 
@@ -75,9 +75,19 @@ you like. Enjoy!
 // Sidebars & Widgetizes Areas
 function bones_register_sidebars() {
 	register_sidebar(array(
-		'id' => 'sidebar1',
-		'name' => __('Sidebar 1', 'bonestheme'),
+		'id' => 'sidebar',
+		'name' => __('Sidebar', 'bonestheme'),
 		'description' => __('The first (primary) sidebar.', 'bonestheme'),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+
+	register_sidebar(array(
+		'id' => 'footer',
+		'name' => __('Footer', 'bonestheme'),
+		'description' => __('The footer.', 'bonestheme'),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',
