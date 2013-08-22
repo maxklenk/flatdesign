@@ -164,12 +164,25 @@ function bones_comments($comment, $args, $depth) {
 // Search Form
 function bones_wpsearch($form) {
 	$form = '<form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
-	<label class="screen-reader-text" for="s">' . __('Search for:', 'bonestheme') . '</label>
 	<input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="'.esc_attr__('Search the Site...','bonestheme').'" />
-	<input type="submit" id="searchsubmit" value="'. esc_attr__('Search') .'" />
 	</form>';
 	return $form;
 } // don't remove this bracket!
+
+// Add Search Form to Menu
+add_filter('wp_nav_menu_items','add_search_box', 10, 2);
+function add_search_box($items, $args) {
+	if ($args->theme_location == 'main-nav') { // add only to header navigation
+        ob_start();
+        get_search_form();
+        $searchform = ob_get_contents();
+        ob_end_clean();
+
+        $items .= '<li id="menu-search" class="menu-item menu-item-type-search menu-search">' . $searchform . '</li>';
+	}
+
+    return $items;
+}
 
 /************* HEADER IMAGE *********************/
 
