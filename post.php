@@ -2,6 +2,13 @@
 
 	<header class="article-header">
 
+		<?php
+		// check if the post has a Post Thumbnail assigned to it.
+		if ( has_post_thumbnail() ) {
+			the_post_thumbnail('flatdesign_post_preview');
+		} 
+		?>
+
 		<h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 		
 		<time class="updated article-date" datetime="<?=get_the_time('Y-m-j')?>" pubdate>
