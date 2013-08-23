@@ -50,6 +50,8 @@ require_once('library/bones.php'); // if you remove this, bones will break
 // Thumbnail sizes
 add_image_size( 'bones-thumb-600', 600, 150, true );
 add_image_size( 'bones-thumb-300', 300, 100, true );
+add_image_size( 'flatdesign_header_image', 1140, 330, true);
+add_image_size( 'flatdesign_post_preview', 500, 150, true);
 /*
 to add more sizes, simply copy a line from above
 and change the dimensions & name. As long as you
@@ -245,7 +247,7 @@ endif; // twentyeleven_setup
 function get_flatdesign_header_image() {
 
 		// Check to see if the header image has been removed
-		$header_image = get_header_image();
+		$header_image = get_header_image('flatdesign_header_image');
 		if ( $header_image ) :
 			// We need to figure out what the minimum width should be for our featured image.
 			// This result would be the suggested width if the theme were to implement flexible widths.
@@ -259,7 +261,7 @@ function get_flatdesign_header_image() {
 					( /* $src, $width, $height */ $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), array( $header_image_width, $header_image_width ) ) ) &&
 					$image[1] >= $header_image_width ) :
 				// Houston, we have a new header image!
-				echo get_the_post_thumbnail( $post->ID, 'post-thumbnail' );
+				echo get_the_post_thumbnail( $post->ID, 'flatdesign_header_image' );
 			else :
 				$header_image_width  = get_custom_header()->width;
 				$header_image_height = get_custom_header()->height;
