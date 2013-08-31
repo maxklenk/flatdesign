@@ -7,4 +7,7 @@ Bones.esproj/Project.espressostorage
 
 .DS_Store
 
-library/scss/.sass-cache
+library/scss/.sass-cache/
+
+.idea/
+*.iml
