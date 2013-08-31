@@ -10,3 +10,4 @@ Bones.esproj/Project.espressostorage
 library/scss/.sass-cache/
 
 .idea/
+*.iml
