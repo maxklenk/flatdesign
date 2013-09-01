@@ -16,10 +16,11 @@ GENERAL STYLES
 *********************/
 
 body {
-	font-family: $serif;
+	font-family: $sans-serif;
 	font-size: 100%;
 	line-height: 1.5;
-	color: #565656;
+    color: $white;
+    background-color: $page-background;
 }
 
 /********************
@@ -105,6 +106,8 @@ H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+    margin: 0;
+    padding: 0;
 	font-family: $sans-serif;
 	text-rendering: optimizelegibility;
 	font-weight: 500;
@@ -122,16 +125,18 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 h1, .h1 {
 	font-size: 2.5em;
 	line-height: 1.333em;
+    margin: .5em 0;
 }
 
 h2, .h2 {
 	font-size: 1.75em;
 	line-height: 1.4em;
-	margin-bottom: 0.375em;
+    margin: .4em 0;
 }
 
 h3, .h3 {
 	font-size: 1.125em;
+    margin: .3em 0;
 }
 
 h4, .h4 {
@@ -152,7 +157,9 @@ HEADER STYLES
 
 .header {}
 
-	#logo {}
+	#logo {
+        position: absolute;
+    }
 
 /*********************
 NAVIGATION STYLES
@@ -167,7 +174,7 @@ and more scalable.
 */
 
 .nav {
-	border: 1px solid #ccc;
+	border: 1px solid #f8f8f8;
 	border-bottom: 0;
 
 	li {
@@ -175,9 +182,12 @@ and more scalable.
 		a {
 			display: block;
 			text-decoration: none;
-			padding: 10px 10px;
-			background-color: #eee;
-			border-bottom: 1px solid #ccc;
+            font-size: 1.2em;
+            font-weight: bold;
+			padding: .5em .75em;
+			background-color: $nav-background;
+			border-right: .2em solid $page-background;
+            border-left: none;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -208,7 +218,7 @@ and more scalable.
 
 				a {
 					padding-left: 30px;
-
+                    background-color: $nav-background;
 					&:hover,
 					&:focus {}
 
@@ -222,16 +232,29 @@ and more scalable.
 
 			}
 
+            /* highlight current page */
+            li.current-menu-item,
+            li.current_page_item,
+            li.current-page-ancestor {
+
+                a {
+                    background-color: $nav-selection;
+                }
+
+            }
+
 		}
 
-	} /* end .menu li */
+    } /* end .menu li */
 
 	/* highlight current page */
 	li.current-menu-item,
 	li.current_page_item,
 	li.current-page-ancestor {
 
-		a {}
+		a {
+            background-color: $nav-selection;
+        }
 
 	}  /* end current highlighters */
 
@@ -241,6 +264,10 @@ and more scalable.
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+
+#main {
+    margin-bottom: 2.2em;
+}
 
 #content {
 	margin-top: 2.2em;
@@ -265,8 +292,9 @@ POSTS & CONTENT STYLES
 
 		/* want to style individual post classes? Booya! */
 		.post-id {}         /* post by id (i.e. post-3) */
-		.post {}            /* general post style */
-		.page {}            /* general article on a page style */
+		.type-post, .type-page {
+            background-color: $content-background;
+        }
 		.attachment {}      /* general style on an attatchment */
 		.sticky {}          /* sticky post style */
 		.hentry {}          /* hentry class */
@@ -786,6 +814,7 @@ SIDEBARS & ASIDES
 	.widgettitle {}
 
 	.widget {
+        @include css-diagonal-gradient($ieee-gradient-start,$ieee-gradient-end);
 
 		ul {
 
@@ -813,7 +842,9 @@ FOOTER STYLES
 .footer {
 	clear: both;
 }
-
+    #inner-footer {
+        background-color: $content-background;
+    }
 	/*
 	if you checked out the link above:
 	http://www.alistapart.com/articles/organizing-mobile/
@@ -834,5 +865,8 @@ FOOTER STYLES
 	} /* end .footer-links */
 
 
-	.copyright {}
+	.copyright {
+        text-align: center;
+      font-size: .8em;
+    }
 

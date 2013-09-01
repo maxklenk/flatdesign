@@ -25,7 +25,7 @@
 			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 		<![endif]-->
 		<!-- or, set /favicon.ico for IE10 win -->
-		<meta name="msapplication-TileColor" content="#f01d4f">
+		<meta name="msapplication-TileColor" content="#094164">
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
@@ -47,7 +47,7 @@
 
 				<div id="inner-header" class="wrap clearfix">
 
-					<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="wp-content/themes/flatdesign/library/images/ieee_header_logo.png" /></a>
+					<a href="<?php echo home_url(); ?>" rel="nofollow"><img id="logo" src="<?php echo get_template_directory_uri(); ?>/library/images/ieee_header_logo.png" /></a>
 
 					<?php echo get_flatdesign_header_image(); ?>
 
