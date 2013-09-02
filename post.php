@@ -13,6 +13,10 @@
 			// check if the post has a Post Thumbnail assigned to it.
 			if ( has_post_thumbnail() ) {
 				the_post_thumbnail('flatdesign_post_preview');
+			} else {
+				?>
+				<img width="750" height="225" src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/headers/sky-750-225.jpg" class="attachment-flatdesign_post_preview wp-post-image" alt="<?php the_title(); ?>">
+				<?php
 			} 
 			?>
 
