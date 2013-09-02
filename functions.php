@@ -51,7 +51,7 @@ require_once('library/bones.php'); // if you remove this, bones will break
 add_image_size( 'bones-thumb-600', 600, 150, true );
 add_image_size( 'bones-thumb-300', 300, 100, true );
 add_image_size( 'flatdesign_header_image', 1140, 330, true);
-add_image_size( 'flatdesign_post_preview', 500, 150, true);
+add_image_size( 'flatdesign_post_preview', 750, 225, true);
 /*
 to add more sizes, simply copy a line from above
 and change the dimensions & name. As long as you
@@ -266,7 +266,7 @@ function get_flatdesign_header_image() {
 				$header_image_width  = get_custom_header()->width;
 				$header_image_height = get_custom_header()->height;
 		?>
-			<img src="<?php header_image(); ?>" width="<?php echo $header_image_width; ?>" height="<?php echo $header_image_height; ?>" alt="" />
+			<img class="header-image" src="<?php header_image(); ?>" width="<?php echo $header_image_width; ?>" height="<?php echo $header_image_height; ?>" alt="" />
 		<?php endif; // end check for featured image or standard header ?>
 	</a>
 <?php endif; // end check for removed header image 

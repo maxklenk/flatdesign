@@ -47,7 +47,9 @@
 
 				<div id="inner-header" class="wrap clearfix">
 
-					<a href="<?php echo home_url(); ?>" rel="nofollow"><img id="logo" src="<?php echo get_template_directory_uri(); ?>/library/images/ieee_header_logo.png" /></a>
+					<a href="<?php echo home_url(); ?>" rel="nofollow">
+						<img id="header-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/ieee_header_logo.png" />
+					</a>
 
 					<?php echo get_flatdesign_header_image(); ?>
 

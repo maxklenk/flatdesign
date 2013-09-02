@@ -155,11 +155,22 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
 
-	#logo {
+	#header-logo {
         position: absolute;
+        height: auto;
+		display: block;
+		width: 15%;
     }
+
+    /* resize image responsive */
+	.header-image {
+		height: auto;
+		display: block;
+		width: 100%;
+	}
+}
 
 /*********************
 NAVIGATION STYLES
@@ -275,7 +286,15 @@ POSTS & CONTENT STYLES
 
 		.hentry {
 
-			header {}
+			header {
+
+				/* resize image responsive */
+				img {
+					height: auto;
+					display: block;
+					width: 100%;
+				}
+			}
 
 			footer {}
 
