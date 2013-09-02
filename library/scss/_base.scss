@@ -307,7 +307,7 @@ POSTS & CONTENT STYLES
 
 #content {
 	margin-top: 2.2em;
-}
+
 
 		.hentry {
 
@@ -332,11 +332,10 @@ POSTS & CONTENT STYLES
 				}
 
 				time {
-					display:block;
+					display: block;
 					position: absolute;
-					text-align: right;
-					width: 25px;
-					left: -30px;
+					top: -20px;
+					text-transform: lowercase;
 
 					.article-date-day {
 						font-size: 20px;
@@ -354,6 +353,30 @@ POSTS & CONTENT STYLES
 						line-height: 13px;
 					}
 				}
+
+				// time {
+				// 	display:block;
+				// 	position: absolute;
+				// 	text-align: right;
+				// 	width: 25px;
+				// 	left: -30px;
+
+				// 	.article-date-day {
+				// 		font-size: 20px;
+				// 		line-height: 21px;
+				// 		font-weight: bold;
+				// 	}
+
+				// 	.article-date-month {
+				// 		font-size: 12px;
+				// 		line-height: 13px;
+				// 	}
+
+				// 	.article-date-year {
+				// 		font-size: 10px;
+				// 		line-height: 13px;
+				// 	}
+				// }
 			}
 
 			footer {}
@@ -503,7 +526,7 @@ POSTS & CONTENT STYLES
 		.size-large {}
 		.size-medium {}
 		.size-thumbnail {}
-
+	}
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/

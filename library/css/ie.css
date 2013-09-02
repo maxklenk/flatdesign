@@ -579,24 +579,39 @@ NAVIGATION STYLES
 
 /* end .nav */
 /*********************
+POSTS & CONTENT STYLES
+*********************/
+/* line 172, ../scss/_768up.scss */
+#content .hentry header time {
+  text-align: right;
+  width: 25px;
+  top: 0px;
+  left: -30px;
+}
+/* line 178, ../scss/_768up.scss */
+#content .hentry header time span {
+  display: block;
+}
+
+/*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 167, ../scss/_768up.scss */
+/* line 192, ../scss/_768up.scss */
 .widgettitle {
   margin-bottom: 0.75em;
 }
 
-/* line 171, ../scss/_768up.scss */
+/* line 196, ../scss/_768up.scss */
 .widget {
   padding: 0 10px;
   margin-bottom: 2.2em;
 }
-/* line 176, ../scss/_768up.scss */
+/* line 201, ../scss/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 184, ../scss/_768up.scss */
+/* line 209, ../scss/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -621,7 +636,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 292, ../scss/_768up.scss */
+/* line 317, ../scss/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
