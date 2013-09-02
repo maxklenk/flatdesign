@@ -306,10 +306,10 @@ POSTS & CONTENT STYLES
 }
 
 #content {
-	margin-top: 2.2em;
-
 
 		.hentry {
+
+			margin: 30px 0;
 
 			header {
 				position: relative;
@@ -379,7 +379,23 @@ POSTS & CONTENT STYLES
 				// }
 			}
 
-			footer {}
+			section {
+				padding: 0 5px;
+				background-color: $transparent-dark;
+			}
+
+			footer {
+
+				div {
+					background-color: $transparent-dark;
+					padding: 0 5px;
+					margin-top: 3px;
+
+					.tags-title, .categories-title {
+						padding-right: 15px;
+					}
+				}
+			}
 
 		} /* end .hentry */
 
@@ -395,7 +411,7 @@ POSTS & CONTENT STYLES
 		/* want to style individual post classes? Booya! */
 		.post-id {}         /* post by id (i.e. post-3) */
 		.type-post, .type-page {
-            background-color: $transparent-dark;
+            //background-color: $transparent-dark;
         }
 		.attachment {}      /* general style on an attatchment */
 		.sticky {}          /* sticky post style */

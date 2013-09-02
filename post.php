@@ -30,8 +30,8 @@
 	</section> <!-- end article section -->
 
 	<footer class="article-footer">
-		<p class="tags"><?php the_tags('<span class="tags-title">' . __('Tags:', 'bonestheme') . '</span> ', ', ', ''); ?></p>
-		<p class="categories"><span class="categories-title"> <?=__('Categories:', 'bonestheme') ?> </span> <?=get_the_category_list(', ') ?></p>
+		<div class="tags"><?php the_tags('<span class="tags-title">' . __('Tags:', 'bonestheme') . '</span> ', ', ', ''); ?></div>
+		<div class="categories"><span class="categories-title"> <?=__('Categories:', 'bonestheme') ?> </span> <?=get_the_category_list(', ') ?></div>
 	</footer> <!-- end article footer -->
 
 	<?php // comments_template(); // uncomment if you want to use them ?>
