@@ -2,21 +2,23 @@
 
 	<header class="article-header">
 
-		<?php
-		// check if the post has a Post Thumbnail assigned to it.
-		if ( has_post_thumbnail() ) {
-			the_post_thumbnail('flatdesign_post_preview');
-		} 
-		?>
-
-		<h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-		
 		<time class="updated article-date" datetime="<?=get_the_time('Y-m-j')?>" pubdate>
 			<span class="article-date-day"><?=get_the_time('j')?></span>
 			<span class="article-date-month"><?=get_the_time('M')?></span>
 			<span class="article-date-year"><?=get_the_time('Y')?></span>
 		</time>
-			
+
+		<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+			<?php
+			// check if the post has a Post Thumbnail assigned to it.
+			if ( has_post_thumbnail() ) {
+				the_post_thumbnail('flatdesign_post_preview');
+			} 
+			?>
+
+			<h1 class="h2 post-title"><?php the_title(); ?></h1>
+		</a>
+
 	</header> <!-- end article header -->
 
 	<section class="entry-content clearfix">
