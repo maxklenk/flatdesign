@@ -170,6 +170,7 @@ really slow down your CSS. Don't overdo it.
 *********************/
 /* @include css-gradient(#dfdfdf,#f8f8f8); */
 /* @include css-diagonal-gradient($ieee-gradient-start,$ieee-gradient-end); */
+/* @include css-horizontal-right-gradient(#dfdfdf, #f8f8f8, 70%); */
 /*********************
 BOX SIZING
 *********************/
@@ -179,7 +180,7 @@ probably best not to use it. I mean, were you going to anyway? */
 /*********************
 BUTTONS
 *********************/
-/* line 233, ../scss/_mixins.scss */
+/* line 243, ../scss/_mixins.scss */
 .button, .button:visited {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 1px solid #dedede;
@@ -203,7 +204,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, white, #f2f2f2);
   background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
 }
-/* line 252, ../scss/_mixins.scss */
+/* line 262, ../scss/_mixins.scss */
 .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
   color: white;
   border: 1px solid #dedede;
@@ -216,7 +217,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #f2f2f2, #e6e6e6);
   background-image: linear-gradient(to bottom, #f2f2f2, #e6e6e6);
 }
-/* line 260, ../scss/_mixins.scss */
+/* line 270, ../scss/_mixins.scss */
 .button:active, .button:visited:active {
   background-color: white;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(white));
@@ -226,7 +227,7 @@ BUTTONS
   background-image: linear-gradient(to bottom, #f2f2f2, #ffffff);
 }
 
-/* line 265, ../scss/_mixins.scss */
+/* line 275, ../scss/_mixins.scss */
 .blue-button, .blue-button:visited {
   border-color: #1472ad;
   text-shadow: 0 1px 1px #1472ad;
@@ -238,7 +239,7 @@ BUTTONS
   background-image: linear-gradient(to bottom, #1990db, #1681c4);
   box-shadow: inset 0 0 3px #59b3ec;
 }
-/* line 271, ../scss/_mixins.scss */
+/* line 281, ../scss/_mixins.scss */
 .blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
   border-color: #116396;
   background-color: #1472ad;
@@ -248,7 +249,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #1784c9, #1472ad);
   background-image: linear-gradient(to bottom, #1784c9, #1472ad);
 }
-/* line 275, ../scss/_mixins.scss */
+/* line 285, ../scss/_mixins.scss */
 .blue-button:active, .blue-button:visited:active {
   background-color: #1990db;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
