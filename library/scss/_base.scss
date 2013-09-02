@@ -155,11 +155,22 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
 
-	#logo {
+	#header-logo {
         position: absolute;
+        height: auto;
+		display: block;
+		width: 15%;
     }
+
+    /* resize image responsive */
+	.header-image {
+		height: auto;
+		display: block;
+		width: 100%;
+	}
+}
 
 /*********************
 NAVIGATION STYLES
@@ -275,7 +286,50 @@ POSTS & CONTENT STYLES
 
 		.hentry {
 
-			header {}
+			header {
+				position: relative;
+
+
+				/* resize image responsive */
+				img {
+					height: auto;
+					display: block;
+					width: 100%;
+				}
+
+				/* text overlay */
+				.post-title {
+					position: absolute;
+					bottom: 0px;
+					background: rgb(0, 0, 0); /* fallback color */
+   					background: rgba(0, 0, 0, 0.7);
+   					margin: 0;
+				}
+
+				time {
+					display:block;
+					position: absolute;
+					text-align: right;
+					width: 25px;
+					left: -30px;
+
+					.article-date-day {
+						font-size: 20px;
+						line-height: 21px;
+						font-weight: bold;
+					}
+
+					.article-date-month {
+						font-size: 12px;
+						line-height: 13px;
+					}
+
+					.article-date-year {
+						font-size: 10px;
+						line-height: 13px;
+					}
+				}
+			}
 
 			footer {}
 
