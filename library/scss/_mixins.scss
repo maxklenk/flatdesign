@@ -65,13 +65,23 @@ $bones-blue:        #1990db;
 $link-color:        $white;
 $link-hover:        darken($link-color, 15%);
 
-$page-background:     #094164;
-$nav-background:      #144c67;
-$nav-selection:       #3a7b8e;
-$nav2-selection:      #5a7b8e;
+$fallback-page-background:     #186185;
+//$nav-background:      #144c67;
+//$nav-selection:       #3a7b8e;
+//$nav2-selection:      #5a7b8e;
+$nav-border: #f8f8f8;
 $content-background:  #1a5b79;
 $ieee-gradient-start: #61a3c3;
 $ieee-gradient-end:   #33839e;
+
+$transparent-dark: rgba(0, 0, 0, 0.15);
+//$fallback-dark:
+$transparent-darker: rgba(0, 0, 0, 0.25);
+$fallback-darker: #1a5b79; 
+$transparent-light: rgba(255, 255, 255, 0.15);
+//$fallback-light: 
+$transparent-lighter: rgba(255, 255, 255, 0.35);
+$fallback-lighter: #3a7b8e;
 
 /*
 Here's a great tutorial on how to

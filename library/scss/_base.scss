@@ -20,7 +20,8 @@ body {
 	font-size: 100%;
 	line-height: 1.5;
     color: $white;
-    background-color: $page-background;
+    background: $fallback-page-background url("../images/background.svg") 50% 50% fixed;
+	background-size: 100% 100%;
 }
 
 /********************
@@ -185,20 +186,21 @@ and more scalable.
 */
 
 .nav {
-	border: 1px solid #f8f8f8;
-	border-bottom: 0;
+	border: 1px solid $nav-border;
 
 	li {
+		
 
 		a {
 			display: block;
 			text-decoration: none;
             font-size: 1.2em;
             font-weight: bold;
+
 			padding: .5em .75em;
-			background-color: $nav-background;
-			border-right: .2em solid $page-background;
             border-left: none;
+
+            background-color: $transparent-darker;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -209,6 +211,28 @@ and more scalable.
 			&:hover, &:focus {
 
 			}
+		}
+
+		form {
+			display: block;
+			text-decoration: none;
+            
+			
+            border-left: none;
+
+            //background-color: $transparent-darker;
+
+            input {
+            	margin: .1em .1em;
+            	padding: .5em .75em;
+
+            	font-size: 1.2em;
+            	font-weight: bold;
+            	border: none;
+
+            	padding-left: 30px;
+            	background: url(../images/search.png)0 50% no-repeat;
+            }
 		}
 
 		&:first-child {}
@@ -229,7 +253,8 @@ and more scalable.
 
 				a {
 					padding-left: 30px;
-                    background-color: $nav-background;
+                    background-color: $transparent-dark;
+
 					&:hover,
 					&:focus {}
 
@@ -249,7 +274,7 @@ and more scalable.
             li.current-page-ancestor {
 
                 a {
-                    background-color: $nav-selection;
+                    background-color: $transparent-darker;
                 }
 
             }
@@ -264,7 +289,7 @@ and more scalable.
 	li.current-page-ancestor {
 
 		a {
-            background-color: $nav-selection;
+            background-color: $transparent-lighter;
         }
 
 	}  /* end current highlighters */
@@ -347,7 +372,7 @@ POSTS & CONTENT STYLES
 		/* want to style individual post classes? Booya! */
 		.post-id {}         /* post by id (i.e. post-3) */
 		.type-post, .type-page {
-            background-color: $content-background;
+            background-color: $transparent-dark;
         }
 		.attachment {}      /* general style on an attatchment */
 		.sticky {}          /* sticky post style */
@@ -868,7 +893,7 @@ SIDEBARS & ASIDES
 	.widgettitle {}
 
 	.widget {
-        @include css-diagonal-gradient($ieee-gradient-start,$ieee-gradient-end);
+        @include css-diagonal-gradient($transparent-lighter, $transparent-light);
 
 		ul {
 
