@@ -223,6 +223,18 @@ really slow down your CSS. Don't overdo it.
 }
 
 /*********************
+BOX SHADOW
+*********************/
+
+@mixin bright-shadow() {
+  box-shadow: 0 0 .3em rgba(255,255,255,0.2);
+}
+
+@mixin dark-shadow() {
+  box-shadow: 0 0 .3em rgba(0,0,0,0.2);
+}
+
+/*********************
 BOX SIZING
 *********************/
 

@@ -317,6 +317,7 @@ POSTS & CONTENT STYLES
 
 			header {
 				position: relative;
+                @include bright-shadow();
 
 
 				/* resize image responsive */
@@ -369,6 +370,7 @@ POSTS & CONTENT STYLES
 			section {
 				padding: 0 $text-padding;
 				background-color: $transparent-dark;
+                @include bright-shadow();
 			}
 
 			footer {
@@ -922,6 +924,7 @@ SIDEBARS & ASIDES
 
 	.widget {
         @include css-diagonal-gradient($transparent-lighter, $transparent-light);
+        @include dark-shadow();
 
 		ul {
 
