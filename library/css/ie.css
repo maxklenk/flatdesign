@@ -582,26 +582,15 @@ NAVIGATION STYLES
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 172, ../scss/_768up.scss */
-#content .hentry header time {
-  text-align: right;
-  width: 25px;
-  top: 0px;
-  left: -30px;
-}
-/* line 178, ../scss/_768up.scss */
-#content .hentry header time span {
-  display: block;
-}
-/* line 186, ../scss/_768up.scss */
+/* line 174, ../scss/_768up.scss */
 #content .hentry footer div {
   width: 49.8%;
 }
-/* line 190, ../scss/_768up.scss */
+/* line 178, ../scss/_768up.scss */
 #content .hentry footer .tags {
   float: left;
 }
-/* line 193, ../scss/_768up.scss */
+/* line 181, ../scss/_768up.scss */
 #content .hentry footer .categories {
   float: right;
 }
@@ -609,22 +598,22 @@ POSTS & CONTENT STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 207, ../scss/_768up.scss */
+/* line 195, ../scss/_768up.scss */
 .widgettitle {
   margin-bottom: 0.75em;
 }
 
-/* line 211, ../scss/_768up.scss */
+/* line 199, ../scss/_768up.scss */
 .widget {
   padding: 0 10px;
   margin-bottom: 2.2em;
 }
-/* line 216, ../scss/_768up.scss */
+/* line 204, ../scss/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 224, ../scss/_768up.scss */
+/* line 212, ../scss/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -649,7 +638,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 332, ../scss/_768up.scss */
+/* line 320, ../scss/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
