@@ -102,53 +102,53 @@ TYPOGRAPHY
 use the best ampersand
 http://simplebits.com/notebook/2008/08/14/ampersands-2/
 */
-/* line 125, ../scss/_mixins.scss */
+/* line 120, ../scss/_mixins.scss */
 span.amp {
   font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
   font-style: italic;
 }
 
-/* line 131, ../scss/_mixins.scss */
+/* line 126, ../scss/_mixins.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 132, ../scss/_mixins.scss */
+/* line 127, ../scss/_mixins.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 133, ../scss/_mixins.scss */
+/* line 128, ../scss/_mixins.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 137, ../scss/_mixins.scss */
+/* line 132, ../scss/_mixins.scss */
 .alert-help, .alert-info, .alert-error, .alert-success {
   margin: 10px;
   padding: 5px 18px;
   border: 1px solid;
 }
 
-/* line 143, ../scss/_mixins.scss */
+/* line 138, ../scss/_mixins.scss */
 .alert-help {
   border-color: #e8dc59;
   background: #ebe16f;
 }
 
-/* line 149, ../scss/_mixins.scss */
+/* line 144, ../scss/_mixins.scss */
 .alert-info {
   border-color: #bfe4f4;
   background: #d5edf8;
 }
 
-/* line 155, ../scss/_mixins.scss */
+/* line 150, ../scss/_mixins.scss */
 .alert-error {
   border-color: #f8cdce;
   background: #fbe3e4;
 }
 
-/* line 161, ../scss/_mixins.scss */
+/* line 156, ../scss/_mixins.scss */
 .alert-success {
   border-color: #deeaae;
   background: #e6efc2;
@@ -180,7 +180,7 @@ probably best not to use it. I mean, were you going to anyway? */
 /*********************
 BUTTONS
 *********************/
-/* line 243, ../scss/_mixins.scss */
+/* line 238, ../scss/_mixins.scss */
 .button, .button:visited {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 1px solid #dedede;
@@ -204,7 +204,7 @@ BUTTONS
   background: -o-linear-gradient(top, white, #f2f2f2);
   background: linear-gradient(to bottom, #ffffff, #f2f2f2);
 }
-/* line 262, ../scss/_mixins.scss */
+/* line 257, ../scss/_mixins.scss */
 .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
   color: white;
   border: 1px solid #dedede;
@@ -217,7 +217,7 @@ BUTTONS
   background: -o-linear-gradient(top, #f2f2f2, #e6e6e6);
   background: linear-gradient(to bottom, #f2f2f2, #e6e6e6);
 }
-/* line 270, ../scss/_mixins.scss */
+/* line 265, ../scss/_mixins.scss */
 .button:active, .button:visited:active {
   background: white;
   background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(white));
@@ -227,7 +227,7 @@ BUTTONS
   background: linear-gradient(to bottom, #f2f2f2, #ffffff);
 }
 
-/* line 275, ../scss/_mixins.scss */
+/* line 270, ../scss/_mixins.scss */
 .blue-button, .blue-button:visited {
   border-color: #1472ad;
   text-shadow: 0 1px 1px #1472ad;
@@ -239,7 +239,7 @@ BUTTONS
   background: linear-gradient(to bottom, #1990db, #1681c4);
   box-shadow: inset 0 0 3px #59b3ec;
 }
-/* line 281, ../scss/_mixins.scss */
+/* line 276, ../scss/_mixins.scss */
 .blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
   border-color: #116396;
   background: #1472ad;
@@ -249,7 +249,7 @@ BUTTONS
   background: -o-linear-gradient(top, #1784c9, #1472ad);
   background: linear-gradient(to bottom, #1784c9, #1472ad);
 }
-/* line 285, ../scss/_mixins.scss */
+/* line 280, ../scss/_mixins.scss */
 .blue-button:active, .blue-button:visited:active {
   background: #1990db;
   background: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
@@ -596,22 +596,27 @@ POSTS & CONTENT STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 194, ../scss/_768up.scss */
+/* line 192, ../scss/_768up.scss */
+.sidebar {
+  margin-top: 30px;
+}
+
+/* line 196, ../scss/_768up.scss */
 .widgettitle {
   margin-bottom: 0.75em;
 }
 
-/* line 198, ../scss/_768up.scss */
+/* line 200, ../scss/_768up.scss */
 .widget {
   padding: 0 10px;
-  margin-bottom: 2.2em;
+  margin-bottom: 2.762430939%;
 }
-/* line 203, ../scss/_768up.scss */
+/* line 205, ../scss/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 211, ../scss/_768up.scss */
+/* line 213, ../scss/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -636,7 +641,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 319, ../scss/_768up.scss */
+/* line 321, ../scss/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
