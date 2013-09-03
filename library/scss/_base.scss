@@ -367,7 +367,7 @@ POSTS & CONTENT STYLES
 			}
 
 			section {
-				padding: 0 5px;
+				padding: 0 $text-padding;
 				background-color: $transparent-dark;
 			}
 
@@ -375,7 +375,7 @@ POSTS & CONTENT STYLES
 
 				div {
 					background-color: $transparent-dark;
-					padding: 0 5px;
+					padding: 0.2em $text-padding;
 					margin-top: 3px;
 
 					.tags-title, .categories-title {
@@ -416,7 +416,9 @@ POSTS & CONTENT STYLES
 		/* entry content */
 		.entry-content {
 
-			p {}
+			p {
+				margin: $text-padding 0;
+			}
 
 
 			ul, ol, table, dl {}
