@@ -168,8 +168,8 @@ CSS3 GRADIENTS
 Be careful with these since they can
 really slow down your CSS. Don't overdo it.
 *********************/
-/* @include css-gradient(#dfdfdf,#f8f8f8); */
-/* @include css-diagonal-gradient($ieee-gradient-start,$ieee-gradient-end); */
+/* @include css-gradient(#dfdfdf, #f8f8f8); */
+/* @include css-diagonal-gradient(#dfdfdf, #f8f8f8); */
 /* @include css-horizontal-right-gradient(#dfdfdf, #f8f8f8, 70%); */
 /*********************
 BOX SIZING
@@ -197,12 +197,12 @@ BUTTONS
   margin-bottom: 20px;
   line-height: 21px;
   border-radius: 4px;
-  background-color: #f2f2f2;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f2f2f2));
-  background-image: -webkit-linear-gradient(top, white, #f2f2f2);
-  background-image: -moz-linear-gradient(top, white, #f2f2f2);
-  background-image: -o-linear-gradient(top, white, #f2f2f2);
-  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  background: #f2f2f2;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f2f2f2));
+  background: -webkit-linear-gradient(top, white, #f2f2f2);
+  background: -moz-linear-gradient(top, white, #f2f2f2);
+  background: -o-linear-gradient(top, white, #f2f2f2);
+  background: linear-gradient(to bottom, #ffffff, #f2f2f2);
 }
 /* line 262, ../scss/_mixins.scss */
 .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
@@ -210,53 +210,53 @@ BUTTONS
   border: 1px solid #dedede;
   border-top-color: #cccccc;
   border-left-color: #cccccc;
-  background-color: #e6e6e6;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#e6e6e6));
-  background-image: -webkit-linear-gradient(top, #f2f2f2, #e6e6e6);
-  background-image: -moz-linear-gradient(top, #f2f2f2, #e6e6e6);
-  background-image: -o-linear-gradient(top, #f2f2f2, #e6e6e6);
-  background-image: linear-gradient(to bottom, #f2f2f2, #e6e6e6);
+  background: #e6e6e6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#e6e6e6));
+  background: -webkit-linear-gradient(top, #f2f2f2, #e6e6e6);
+  background: -moz-linear-gradient(top, #f2f2f2, #e6e6e6);
+  background: -o-linear-gradient(top, #f2f2f2, #e6e6e6);
+  background: linear-gradient(to bottom, #f2f2f2, #e6e6e6);
 }
 /* line 270, ../scss/_mixins.scss */
 .button:active, .button:visited:active {
-  background-color: white;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(white));
-  background-image: -webkit-linear-gradient(top, #f2f2f2, white);
-  background-image: -moz-linear-gradient(top, #f2f2f2, white);
-  background-image: -o-linear-gradient(top, #f2f2f2, white);
-  background-image: linear-gradient(to bottom, #f2f2f2, #ffffff);
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(white));
+  background: -webkit-linear-gradient(top, #f2f2f2, white);
+  background: -moz-linear-gradient(top, #f2f2f2, white);
+  background: -o-linear-gradient(top, #f2f2f2, white);
+  background: linear-gradient(to bottom, #f2f2f2, #ffffff);
 }
 
 /* line 275, ../scss/_mixins.scss */
 .blue-button, .blue-button:visited {
   border-color: #1472ad;
   text-shadow: 0 1px 1px #1472ad;
-  background-color: #1681c4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1990db), to(#1681c4));
-  background-image: -webkit-linear-gradient(top, #1990db, #1681c4);
-  background-image: -moz-linear-gradient(top, #1990db, #1681c4);
-  background-image: -o-linear-gradient(top, #1990db, #1681c4);
-  background-image: linear-gradient(to bottom, #1990db, #1681c4);
+  background: #1681c4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1990db), to(#1681c4));
+  background: -webkit-linear-gradient(top, #1990db, #1681c4);
+  background: -moz-linear-gradient(top, #1990db, #1681c4);
+  background: -o-linear-gradient(top, #1990db, #1681c4);
+  background: linear-gradient(to bottom, #1990db, #1681c4);
   box-shadow: inset 0 0 3px #59b3ec;
 }
 /* line 281, ../scss/_mixins.scss */
 .blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
   border-color: #116396;
-  background-color: #1472ad;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1784c9), to(#1472ad));
-  background-image: -webkit-linear-gradient(top, #1784c9, #1472ad);
-  background-image: -moz-linear-gradient(top, #1784c9, #1472ad);
-  background-image: -o-linear-gradient(top, #1784c9, #1472ad);
-  background-image: linear-gradient(to bottom, #1784c9, #1472ad);
+  background: #1472ad;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1784c9), to(#1472ad));
+  background: -webkit-linear-gradient(top, #1784c9, #1472ad);
+  background: -moz-linear-gradient(top, #1784c9, #1472ad);
+  background: -o-linear-gradient(top, #1784c9, #1472ad);
+  background: linear-gradient(to bottom, #1784c9, #1472ad);
 }
 /* line 285, ../scss/_mixins.scss */
 .blue-button:active, .blue-button:visited:active {
-  background-color: #1990db;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
-  background-image: -webkit-linear-gradient(top, #1681c4, #1990db);
-  background-image: -moz-linear-gradient(top, #1681c4, #1990db);
-  background-image: -o-linear-gradient(top, #1681c4, #1990db);
-  background-image: linear-gradient(to bottom, #1681c4, #1990db);
+  background: #1990db;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
+  background: -webkit-linear-gradient(top, #1681c4, #1990db);
+  background: -moz-linear-gradient(top, #1681c4, #1990db);
+  background: -o-linear-gradient(top, #1681c4, #1990db);
+  background: linear-gradient(to bottom, #1681c4, #1990db);
 }
 
 /******************************************************************
