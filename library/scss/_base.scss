@@ -160,6 +160,7 @@ HEADER STYLES
 
 	#inner-header {
 		margin-top: 2%;
+		@include dark-shadow();
 	}
 
 	#header-logo {
@@ -314,10 +315,10 @@ POSTS & CONTENT STYLES
 		.hentry {
 
 			margin: 30px 0;
+			@include dark-shadow();
 
 			header {
 				position: relative;
-                @include bright-shadow(0, -0.1em, 0.3em);
 
 
 				/* resize image responsive */
@@ -370,16 +371,14 @@ POSTS & CONTENT STYLES
 			section {
 				padding: 0 $text-padding;
 				background-color: $transparent-dark;
-                @include bright-shadow();
 			}
 
 			footer {
 
 				div {
 					background-color: $transparent-dark;
-					@include bright-shadow();
 					padding: 0.2em $text-padding;
-					margin-top: 0.1em;
+					margin-top: $border-size;
 
 					.tags-title, .categories-title {
 						padding-right: 15px;

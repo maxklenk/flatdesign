@@ -40,13 +40,15 @@ NAVIGATION STYLES
 *********************/
 
 .nav {
-	margin-top: 5px;
 	border: none;
+	margin-top: $border-size;
+	background-color: $transparent-dark;
+	
 
 	li {
 		float: left;
 		position: relative;
-		margin-right: 5px;
+		margin-right: $border-size;
 		
 
 		a {
@@ -58,12 +60,16 @@ NAVIGATION STYLES
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-                background-color: $transparent-lighter;
+				background-color: $transparent-border;
+                // background-color: $transparent-lighter;
 			}
 		}
 
 		&:first-child {}
-		&:last-child {}
+		&:last-child {
+			margin-right: 0;
+			margin-left: $border-size;
+		}
 
 		/*
 		plan your menus and drop-downs wisely.
