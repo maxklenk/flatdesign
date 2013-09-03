@@ -19,14 +19,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 		<!-- icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) -->
-		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
-		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
+		<link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/library/images/apple-icon-touch.png">
+		<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png">
 		<!--[if IE]>
-			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
+			<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
 		<![endif]-->
 		<!-- or, set /favicon.ico for IE10 win -->
 		<meta name="msapplication-TileColor" content="#094164">
-		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
+		<meta name="msapplication-TileImage" content="<?php echo get_stylesheet_directory_uri(); ?>/library/images/win8-tile-icon.png">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
@@ -48,7 +48,7 @@
 				<div id="inner-header" class="wrap clearfix">
 
 					<a href="<?php echo home_url(); ?>" rel="nofollow">
-						<img id="header-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/ieee_header_logo.png" />
+						<img id="header-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/header-logo.png" />
 						<?php echo get_flatdesign_header_image(); ?>
 					</a>
 					

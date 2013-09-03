@@ -2,10 +2,10 @@
 
 	<header class="article-header">
 
-		<time class="updated article-date" datetime="<?=get_the_time('Y-m-j')?>" pubdate>
-			<span class="article-date-day"><?=get_the_time('j')?></span>
-			<span class="article-date-month"><?=get_the_time('M')?></span>
-			<span class="article-date-year"><?=get_the_time('Y')?></span>
+		<time class="updated article-date" datetime="<?php echo get_the_time('Y-m-j')?>" pubdate>
+			<span class="article-date-day"><?php echo get_the_time('j')?></span>
+			<span class="article-date-month"><?php echo get_the_time('M')?></span>
+			<span class="article-date-year"><?php echo get_the_time('Y')?></span>
 		</time>
 
 		<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
@@ -26,12 +26,18 @@
 	</header> <!-- end article header -->
 
 	<section class="entry-content clearfix">
-		<?php the_excerpt('<span class="read-more">' . __('Read more &raquo;', 'bonestheme') . '</span>'); ?>
+		<?php the_excerpt(); ?>
 	</section> <!-- end article section -->
 
 	<footer class="article-footer">
-		<div class="tags"><?php the_tags('<span class="tags-title">' . __('Tags:', 'bonestheme') . '</span> ', ', ', ''); ?></div>
-		<div class="categories"><span class="categories-title"> <?=__('Categories:', 'bonestheme') ?> </span> <?=get_the_category_list(', ') ?></div>
+		<div class="categories first">
+			<span class="categories-title"> <?php echo __('Categories:', 'bonestheme') ?> </span>
+			<span class="the-categories"> <?php echo get_the_category_list(', ') ?></span>
+		</div>
+		<div class="tags last">
+			<span class="tags-title"><?php echo __('Tags:', 'bonestheme') ?></span>
+			<?php the_tags('<span class="the-tags">', ', ', '</span>'); ?>
+		</div>
 	</footer> <!-- end article footer -->
 
 	<?php // comments_template(); // uncomment if you want to use them ?>

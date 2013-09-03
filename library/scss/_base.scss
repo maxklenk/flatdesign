@@ -158,6 +158,10 @@ HEADER STYLES
 
 .header {
 
+	#inner-header {
+		margin-top: 2%;
+	}
+
 	#header-logo {
         position: absolute;
         height: auto;
@@ -231,7 +235,7 @@ and more scalable.
             	border: none;
 
             	padding-left: 30px;
-            	background: url(../images/search.png)0 50% no-repeat;
+            	background: url(../images/search.png) 0 50% no-repeat;
             }
 		}
 
@@ -360,34 +364,10 @@ POSTS & CONTENT STYLES
 						line-height: 13px;
 					}
 				}
-
-				// time {
-				// 	display:block;
-				// 	position: absolute;
-				// 	text-align: right;
-				// 	width: 25px;
-				// 	left: -30px;
-
-				// 	.article-date-day {
-				// 		font-size: 20px;
-				// 		line-height: 21px;
-				// 		font-weight: bold;
-				// 	}
-
-				// 	.article-date-month {
-				// 		font-size: 12px;
-				// 		line-height: 13px;
-				// 	}
-
-				// 	.article-date-year {
-				// 		font-size: 10px;
-				// 		line-height: 13px;
-				// 	}
-				// }
 			}
 
 			section {
-				padding: 0 5px;
+				padding: 0 $text-padding;
 				background-color: $transparent-dark;
 			}
 
@@ -395,7 +375,7 @@ POSTS & CONTENT STYLES
 
 				div {
 					background-color: $transparent-dark;
-					padding: 0 5px;
+					padding: 0.2em $text-padding;
 					margin-top: 3px;
 
 					.tags-title, .categories-title {
@@ -436,7 +416,9 @@ POSTS & CONTENT STYLES
 		/* entry content */
 		.entry-content {
 
-			p {}
+			p {
+				margin: $text-padding 0;
+			}
 
 
 			ul, ol, table, dl {}
