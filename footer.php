@@ -18,8 +18,6 @@
 							<?php bones_footer_links(); ?>
 						</nav>
 
-						<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. (Version 0.1)</p>
-
 					</div> <!-- end #footer-links -->
 
 				</div> <!-- end #inner-footer -->
