@@ -951,9 +951,12 @@ FOOTER STYLES
 
 .footer {
 	clear: both;
+    width: 100%
+    background-color: rgba(61, 61, 61, 0.89);
+    box-shadow: inset 0 .5em 1em #242424;
 }
     #inner-footer {
-        background-color: $content-background;
+        padding-top: 1em;
     }
 	/*
 	if you checked out the link above:
