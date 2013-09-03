@@ -317,7 +317,7 @@ POSTS & CONTENT STYLES
 
 			header {
 				position: relative;
-                @include bright-shadow();
+                @include bright-shadow(0, -0.1em, 0.3em);
 
 
 				/* resize image responsive */
@@ -377,8 +377,9 @@ POSTS & CONTENT STYLES
 
 				div {
 					background-color: $transparent-dark;
+					@include bright-shadow();
 					padding: 0.2em $text-padding;
-					margin-top: 3px;
+					margin-top: 0.1em;
 
 					.tags-title, .categories-title {
 						padding-right: 15px;

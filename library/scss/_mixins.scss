@@ -226,8 +226,8 @@ really slow down your CSS. Don't overdo it.
 BOX SHADOW
 *********************/
 
-@mixin bright-shadow() {
-  box-shadow: 0 0 .3em rgba(255,255,255,0.2);
+@mixin bright-shadow($horizontal: 0, $vertical: 0, $size: 0.3em) {
+  box-shadow: $horizontal $vertical $size rgba(255, 255, 255, 0.2);
 }
 
 @mixin dark-shadow() {
