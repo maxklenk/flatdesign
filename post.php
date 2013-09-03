@@ -26,7 +26,7 @@
 	</header> <!-- end article header -->
 
 	<section class="entry-content clearfix">
-		<?php the_excerpt('<span class="read-more">' . __('Read more &raquo;', 'bonestheme') . '</span>'); ?>
+		<?php the_excerpt(); ?>
 	</section> <!-- end article section -->
 
 	<footer class="article-footer">
