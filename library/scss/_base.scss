@@ -326,11 +326,16 @@ POSTS & CONTENT STYLES
 				.post-title {
 					position: absolute;
 					bottom: 0px;
-					background: rgb(0, 0, 0); /* fallback color */
-   					background: rgba(26, 91, 121, 0.7);
+   					background: rgb(26, 91, 121);
    					@include css-horizontal-right-gradient(rgba(26, 91, 121, 0.7), rgba(26, 91, 121, 0.0), 80%);
+   					
    					margin: 0;
    					padding-left: 5px;
+   					
+   					white-space: nowrap;
+   					max-width: 100%;
+   					overflow: hidden; /* "overflow" value must be different from "visible" */ 
+  					text-overflow: ellipsis;
 				}
 
 				time {
