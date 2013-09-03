@@ -165,25 +165,24 @@ POSTS & CONTENT STYLES
 
 #content {
 
-		.hentry {
+	.hentry {
 
-			header {}
+		header {}
 
-			footer {
+		footer {
 
-				div {
-					width: 49.8%;
-				}
-
-				.tags {
-					float: left;
-				}
-				.categories {
-					float: right;
-				}
+			.tags {
+				width: 49.8%;
+				float: right;
 			}
 
-		}	
+			.categories {
+				width: 49.8%;
+				float: left;
+			}
+		}
+
+	}	
 }
 
 /*********************
