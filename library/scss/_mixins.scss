@@ -78,6 +78,8 @@ $transparent-light: rgba(255, 255, 255, 0.15);
 $transparent-lighter: rgba(255, 255, 255, 0.35);
 $fallback-lighter: #3a7b8e;
 
+$transparent-border: transparent;
+
 /*
 Here's a great tutorial on how to
 use color variables properly:
@@ -89,7 +91,7 @@ PADDING, SPACEING
 *********************/
 
 $text-padding: 0.5em;
-
+$border-size: 0.1em;
 
 /*********************
 TYPOGRAPHY
