@@ -2,7 +2,7 @@
 
 				<div id="inner-footer" class="wrap clearfix">
 
-					<div id="footer-widgets">
+					<div id="footer-widgets" class="ninecol first">
 
 						<?php if ( is_active_sidebar( 'footer' ) ) : ?>
 
@@ -12,7 +12,7 @@
 
 					</div> <!-- end #footer-widgets -->
 
-					<div id="footer-links">
+					<div id="footer-links" class="threecol last">
 
 						<nav role="navigation">
 							<?php bones_footer_links(); ?>
