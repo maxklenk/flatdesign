@@ -310,6 +310,24 @@ POSTS & CONTENT STYLES
     margin-bottom: 2.2em;
 }
 
+.page, .single {
+
+	article {
+		
+		header {
+			background-color: $transparent-dark;
+
+			h1 {
+				margin: 0;
+			}
+		}
+
+		footer {
+
+		}
+	}
+}
+
 #content {
 
 		.hentry {
@@ -967,6 +985,7 @@ FOOTER STYLES
         	}
         }
     }
+
 	/*
 	if you checked out the link above:
 	http://www.alistapart.com/articles/organizing-mobile/
@@ -976,9 +995,10 @@ FOOTER STYLES
 	override these styles for the desktop
 	view.
 	*/
-	.footer-links {
+	#footer-links {
 
 		ul {
+			background-color: transparent;
 
 			li {}
 
