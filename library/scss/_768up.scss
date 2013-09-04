@@ -40,13 +40,15 @@ NAVIGATION STYLES
 *********************/
 
 .nav {
-	margin-top: 5px;
 	border: none;
+	margin-top: $border-size;
+	background-color: $transparent-dark;
+	
 
 	li {
 		float: left;
 		position: relative;
-		margin-right: 5px;
+		margin-right: $border-size;
 		
 
 		a {
@@ -58,12 +60,16 @@ NAVIGATION STYLES
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-                background-color: $transparent-lighter;
+				background-color: $transparent-border;
+                // background-color: $transparent-lighter;
 			}
 		}
 
 		&:first-child {}
-		&:last-child {}
+		&:last-child {
+			margin-right: 0;
+			margin-left: $border-size;
+		}
 
 		/*
 		plan your menus and drop-downs wisely.
@@ -172,12 +178,12 @@ POSTS & CONTENT STYLES
 		footer {
 
 			.tags {
-				width: 49.8%;
+				width: 49.9%;
 				float: right;
 			}
 
 			.categories {
-				width: 49.8%;
+				width: 49.9%;
 				float: left;
 			}
 		}
@@ -316,19 +322,21 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-.footer-links {
-	ul {
-		li {
-			a {
-				&:hover {}
-			}
-			/*
-			be careful with the depth of your menus.
-			it's very rare to have multi-depth menus in
-			the footer.
-			*/
-			ul {}
-		}
-	}
-} /* end .footer-links */
+#inner-footer {
 
+	#footer-links {
+
+    	.nav {
+
+    		li {
+    			float: right;
+
+    			a {
+    				background: none;
+    				font-weight: normal;
+    				text-decoration: underline;
+    			}
+    		}
+    	}
+    }
+} /* end #inner-footer */

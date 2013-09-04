@@ -26,8 +26,14 @@
 								</section> <!-- end article section -->
 
 								<footer class="article-footer">
-									<?php the_tags('<p class="tags"><span class="tags-title">' . __('Tags:', 'bonestheme') . '</span> ', ', ', '</p>'); ?>
-									<p class="categories"><span class="categories-title"> <?=__('Categories:', 'bonestheme') ?> </span> <?=get_the_category_list(', ') ?></p>
+									<div class="categories first">
+										<span class="categories-title"> <?php echo __('Categories:', 'bonestheme') ?> </span>
+										<span class="the-categories"> <?php echo get_the_category_list(', ') ?></span>
+									</div>
+									<div class="tags last">
+										<span class="tags-title"><?php echo __('Tags:', 'bonestheme') ?></span>
+										<?php the_tags('<span class="the-tags">', ', ', '</span>'); ?>
+									</div>
 								</footer> <!-- end article footer -->
 
 								<?php comments_template(); ?>

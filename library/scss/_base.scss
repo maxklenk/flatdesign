@@ -160,6 +160,7 @@ HEADER STYLES
 
 	#inner-header {
 		margin-top: 2%;
+		@include dark-shadow();
 	}
 
     /* resize image responsive */
@@ -312,15 +313,33 @@ POSTS & CONTENT STYLES
     margin-bottom: 2.2em;
 }
 
+.page, .single {
+
+	article {
+		
+		header {
+			background-color: $transparent-dark;
+
+			h1 {
+				margin: 0;
+			}
+		}
+
+		footer {
+
+		}
+	}
+}
+
 #content {
 
 		.hentry {
 
 			margin: 30px 0;
+			@include dark-shadow();
 
 			header {
 				position: relative;
-                @include bright-shadow();
 
 
 				/* resize image responsive */
@@ -373,7 +392,6 @@ POSTS & CONTENT STYLES
 			section {
 				padding: 0 $text-padding;
 				background-color: $transparent-dark;
-                @include bright-shadow();
 			}
 
 			footer {
@@ -381,7 +399,7 @@ POSTS & CONTENT STYLES
 				div {
 					background-color: $transparent-dark;
 					padding: 0.2em $text-padding;
-					margin-top: 3px;
+					margin-top: $border-size;
 
 					.tags-title, .categories-title {
 						padding-right: 15px;
@@ -954,13 +972,23 @@ FOOTER STYLES
 
 .footer {
 	clear: both;
-    width: 100%
+    width: 100%;
     background-color: rgba(61, 61, 61, 0.89);
     box-shadow: inset 0 .5em 1em #242424;
 }
     #inner-footer {
         padding-top: 1em;
+
+        #footer-widgets {
+        	text-align: center;
+
+        	.widget {
+        		background: none;
+        		box-shadow: none;
+        	}
+        }
     }
+
 	/*
 	if you checked out the link above:
 	http://www.alistapart.com/articles/organizing-mobile/
@@ -970,9 +998,10 @@ FOOTER STYLES
 	override these styles for the desktop
 	view.
 	*/
-	.footer-links {
+	#footer-links {
 
 		ul {
+			background-color: transparent;
 
 			li {}
 
