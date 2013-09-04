@@ -162,19 +162,22 @@ HEADER STYLES
 		margin-top: 2%;
 	}
 
-	#header-logo {
-        position: absolute;
-        height: auto;
-		display: block;
-		width: 10%;
-    }
-
     /* resize image responsive */
 	.header-image {
 		height: auto;
 		display: block;
 		width: 100%;
 	}
+
+    #header-title {
+        position: absolute;
+        margin: .5em;
+        font-size: 3em;
+        padding-left: 1.5em;
+        background-image: url(../images/header-logo.svg);
+        background-repeat: no-repeat;
+        background-size: 1.5em;
+    }
 }
 
 /*********************
