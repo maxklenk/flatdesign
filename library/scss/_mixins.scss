@@ -204,6 +204,16 @@ really slow down your CSS. Don't overdo it.
 	background: linear-gradient(to bottom, $from, $to);
 }
 
+/* @include css-radial-gradient(#2d8ed6, #003050); */
+@mixin css-radial-gradient($from: #2d8ed6, $to: #003050) {
+  background: $to;
+  background: -moz-radial-gradient(center, $from, $to);
+  background: -webkit-radial-gradient(center, $from, $to);
+  background: -o-radial-gradient(center, $from, $to);
+  background: -ms-radial-gradient(center, $from, $to);
+  background: radial-gradient(center, $from, $to);
+}
+
 /* @include css-diagonal-gradient(#dfdfdf, #f8f8f8); */
 @mixin css-diagonal-gradient($from, $to) {
   background: $to;

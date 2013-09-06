@@ -20,8 +20,7 @@ body {
 	font-size: 100%;
 	line-height: 1.5;
     color: $white;
-    background: $fallback-page-background url("../images/background.svg") 50% 50% fixed;
-	background-size: 100% 100%;
+    @include css-radial-gradient();
 }
 
 /********************
