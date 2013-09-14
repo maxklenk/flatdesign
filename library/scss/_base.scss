@@ -331,6 +331,8 @@ POSTS & CONTENT STYLES
 }
 
 #content {
+    padding-bottom: 1em;
+    box-shadow: 0 -.3em .5em rgba(0, 0, 0, 0.2) inset;
 
 		.hentry {
 
@@ -972,8 +974,11 @@ FOOTER STYLES
 .footer {
 	clear: both;
     width: 100%;
-    background-color: rgba(61, 61, 61, 0.89);
-    box-shadow: inset 0 .5em 1em #242424;
+    color: rgba(255, 255, 255, 0.55);
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+    background-color: rgb(68, 68, 68);
+    background-image: radial-gradient(50% 75%, transparent, rgba(0, 0, 0, 0.5)), url(../images/footer-bg-pattern.png);
+    box-shadow: inset 0px -0.3em 0.5em rgba(0, 0, 0, 0.2);
 }
     #inner-footer {
         padding-top: 1em;
@@ -1000,9 +1005,15 @@ FOOTER STYLES
 	#footer-links {
 
 		ul {
-			background-color: transparent;
+            background-color: transparent;
 
-			li {}
+			li {
+                a {
+                    color: rgba(255, 255, 255, 0.55);
+                    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+                    text-decoration: none;
+                }
+            }
 
 		}
 
