@@ -50,34 +50,28 @@ NAVIGATION STYLES
 .nav {
 	border: none;
 	margin-top: $border-size;
-	background-color: $transparent-dark;
-	
+	background-color: $transparent-darker;
 
 	li {
 		float: left;
 		position: relative;
-		margin-right: $border-size;
+		border-right: $border-size solid $transparent-light;
 		
 
 		a {
 			border-bottom: 0;
-			background-color: $transparent-dark;
 
 			/*
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-				background-color: $transparent-border;
-                // background-color: $transparent-lighter;
+                background-color: $transparent-dark;
 			}
 		}
 
 		&:first-child {}
-		&:last-child {
-			margin-right: 0;
-			margin-left: $border-size;
-		}
+		&:last-child {}
 
 		/*
 		plan your menus and drop-downs wisely.
@@ -94,6 +88,7 @@ NAVIGATION STYLES
 
 			li {
 				margin-right: 0;
+				border-style: none;
 
 				a {
 					padding-left: 10px;
@@ -147,18 +142,20 @@ NAVIGATION STYLES
 
 	} /* end .menu ul li */
 
+
+
 	li.menu-search {
 		float: right;
 		margin-right: 0;
+		border-right: none;
 
 		form {
-			margin-top: -2px;
+			margin-top: 2px;
 			width: 100%;
 			text-align: right;
 			
 			input {
 				margin: 0;
-				border: 4px solid $transparent-dark;	
 			}
 		}
 	}

@@ -228,8 +228,6 @@ and more scalable.
 			padding: .5em .75em;
 			border-left: none;
 
-			background-color: $transparent-darker;
-
 			/*
 			remember this is for mobile ONLY, so there's no need
 			to even declare hover styles here, you can do it in
@@ -244,11 +242,7 @@ and more scalable.
 		form {
 			display: block;
 			text-decoration: none;
-			
-			
 			border-left: none;
-
-			//background-color: $transparent-darker;
 
 			input {
 				margin: .1em .1em;
@@ -256,6 +250,7 @@ and more scalable.
 
 				font-size: 1.2em;
 				font-weight: bold;
+				color: white;
 				border: none;
 
 				padding-left: 30px;
@@ -281,7 +276,6 @@ and more scalable.
 
 				a {
 					padding-left: 30px;
-					background-color: $transparent-dark;
 
 					&:hover,
 					&:focus {}
@@ -302,7 +296,7 @@ and more scalable.
 			li.current-page-ancestor {
 
 				a {
-					background-color: $transparent-darker;
+					background-color: $fallback-darkest;
 				}
 
 			}
@@ -317,7 +311,7 @@ and more scalable.
 	li.current-page-ancestor {
 
 		a {
-			background-color: $transparent-lighter;
+			background-color: $transparent-darker;
 		}
 
 	}  /* end current highlighters */

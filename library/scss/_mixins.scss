@@ -73,6 +73,8 @@ $transparent-dark: rgba(0, 0, 0, 0.15);
 //$fallback-dark:
 $transparent-darker: rgba(0, 0, 0, 0.25);
 $fallback-darker: rgb(26, 91, 121); 
+$fallback-darkest: rgb(11, 49, 77); 
+
 $transparent-light: rgba(255, 255, 255, 0.15);
 //$fallback-light: 
 $transparent-lighter: rgba(255, 255, 255, 0.35);
@@ -91,7 +93,7 @@ PADDING, SPACEING
 *********************/
 
 $text-padding: 0.5em;
-$border-size: 0.1em;
+$border-size: 0.2em;
 
 /*********************
 TYPOGRAPHY
