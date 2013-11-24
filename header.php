@@ -47,13 +47,18 @@
 
 				<div id="inner-header" class="wrap clearfix">
 
-					<a href="<?php echo home_url(); ?>" rel="nofollow">
+					<div class="heading">
+						<a href="<?php echo home_url(); ?>" rel="nofollow">
 
-						<span id="header-title"><?php bloginfo('name'); ?></span>
+							<span class="logo"></span>
 
-						<?php echo get_flatdesign_header_image(); ?>
-					</a>
-					
+							<?php echo get_flatdesign_header_image(); ?>
+
+							<h1 class="title"><?php bloginfo('name'); ?></h1>
+
+						</a>
+					</div>
+
 					<nav role="navigation">
 						<?php bones_main_nav(); ?>
 					</nav>
