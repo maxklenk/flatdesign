@@ -25,7 +25,7 @@
 									<?php the_content(); ?>
 								</section> <!-- end article section -->
 
-								<footer class="article-footer">
+								<footer class="article-footer clearfix">
 									<div class="categories first">
 										<span class="categories-title"> <?php echo __('Categories:', 'bonestheme') ?> </span>
 										<span class="the-categories"> <?php echo get_the_category_list(', ') ?></span>
