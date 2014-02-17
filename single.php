@@ -4,7 +4,7 @@
 
 				<div id="inner-content" class="wrap clearfix">
 
-					<div id="main" class="eightcol first clearfix" role="main">
+					<div id="main" class="ninecol first clearfix" role="main">
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -13,9 +13,11 @@
 								<header class="article-header">
 
 									<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
-									<p class="byline vcard"><?php
-										printf(__('Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&amp;</span> filed under %4$s.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', '));
-									?></p>
+									<time class="updated article-date" datetime="<?=get_the_time('Y-m-j')?>" pubdate>
+										<span class="article-date-day"><?=get_the_time('j')?></span>
+										<span class="article-date-month"><?=get_the_time('M')?></span>
+										<span class="article-date-year"><?=get_the_time('Y')?></span>
+									</time>
 
 								</header> <!-- end article header -->
 
@@ -23,9 +25,15 @@
 									<?php the_content(); ?>
 								</section> <!-- end article section -->
 
-								<footer class="article-footer">
-									<?php the_tags('<p class="tags"><span class="tags-title">' . __('Tags:', 'bonestheme') . '</span> ', ', ', '</p>'); ?>
-
+								<footer class="article-footer clearfix">
+									<div class="categories first">
+										<span class="categories-title"> <?php echo __('Categories:', 'bonestheme') ?> </span>
+										<span class="the-categories"> <?php echo get_the_category_list(', ') ?></span>
+									</div>
+									<div class="tags last">
+										<span class="tags-title"><?php echo __('Tags:', 'bonestheme') ?></span>
+										<?php the_tags('<span class="the-tags">', ', ', '</span>'); ?>
+									</div>
 								</footer> <!-- end article footer -->
 
 								<?php comments_template(); ?>

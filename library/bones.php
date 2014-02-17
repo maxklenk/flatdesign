@@ -126,7 +126,7 @@ function bones_scripts_and_styles() {
   if (!is_admin()) {
 
     // modernizr (without media query polyfill)
-    wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
+    wp_register_script( 'bones-modernizr', get_template_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
     // register main stylesheet
     wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
@@ -140,7 +140,7 @@ function bones_scripts_and_styles() {
     }
 
     //adding scripts file in the footer
-    wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
+    wp_register_script( 'bones-js', get_template_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 
     // enqueue styles and scripts
     wp_enqueue_script( 'bones-modernizr' );
@@ -171,23 +171,44 @@ function bones_theme_support() {
 	add_theme_support('post-thumbnails');
 
 	// default thumb size
-	set_post_thumbnail_size(125, 125, true);
+	set_post_thumbnail_size(1140, 300, true);
 
 	// wp custom background (thx to @bransonwerner for update)
-	add_theme_support( 'custom-background',
-	    array(
-	    'default-image' => '',  // background image default
-	    'default-color' => '', // background color default (dont add the #)
-	    'wp-head-callback' => '_custom_background_cb',
-	    'admin-head-callback' => '',
-	    'admin-preview-callback' => ''
-	    )
-	);
+	// add_theme_support( 'custom-background',
+	//     array(
+	//     'default-image' => '',  // background image default
+	//     'default-color' => '', // background color default (dont add the #)
+	//     'wp-head-callback' => '_custom_background_cb',
+	//     'admin-head-callback' => '',
+	//     'admin-preview-callback' => ''
+	//     )
+	// );
 
 	// rss thingy
 	add_theme_support('automatic-feed-links');
 
-	// to add header image support go here: http://themble.com/support/adding-header-background-image-support/
+	// adding header image support 
+	add_theme_support( 'custom-header', 
+		array(
+			'width'                  => 1140,
+			'height'                 => 300,
+			'flex-width'             => false,
+			'flex-height'            => false,
+			'random-default'         => true,
+			'header-text'            => true,
+			'default-text-color'     => 'ffffff',
+			'uploads'                => true,
+		) 
+	);
+
+	// and adding the first header image
+	register_default_headers( array(
+		'sky' => array(
+			'url' => '%s/library/images/headers/sky-1140-300.jpg',
+			'thumbnail_url' => '%s/library/images/headers/sky-thumbnail.jpg',
+			'description' => __( 'Sky', 'flatdesign' )
+		)
+	) );
 
 	// adding post format support
 	add_theme_support( 'post-formats',
@@ -377,7 +398,7 @@ function bones_filter_ptags_on_images($content){
 function bones_excerpt_more($more) {
 	global $post;
 	// edit here if you like
-return '...  <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __('Read', 'bonestheme') . get_the_title($post->ID).'">'. __('Read more &raquo;', 'bonestheme') .'</a>';
+	return '<a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __('Read', 'bonestheme') . get_the_title($post->ID).'">...</a>';
 }
 
 /*

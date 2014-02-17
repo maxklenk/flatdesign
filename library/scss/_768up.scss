@@ -31,21 +31,32 @@ LAYOUT & GRID STYLES
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
 
-	#logo {}
+	#inner-header {
+
+		.heading {
+			.title {
+				font-size: 3em;
+			}
+		}
+	}
+}
 
 /*********************
 NAVIGATION STYLES
 *********************/
 
 .nav {
-	background: #eee;
-	border: 0;
+	border: none;
+	margin-top: $border-size;
+	background-color: $transparent-darker;
 
 	li {
 		float: left;
 		position: relative;
+		border-right: $border-size solid $transparent-light;
+		
 
 		a {
 			border-bottom: 0;
@@ -55,8 +66,7 @@ NAVIGATION STYLES
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-				background-color: #dedede;
-
+                background-color: $transparent-dark;
 			}
 		}
 
@@ -72,10 +82,13 @@ NAVIGATION STYLES
 			border: 1px solid #ccc;
 			border-top: 0;
 			position: absolute;
+            font-size: 1em;
 			display: none;
 			z-index: 8999;
 
 			li {
+				margin-right: 0;
+				border-style: none;
 
 				a {
 					padding-left: 10px;
@@ -83,9 +96,13 @@ NAVIGATION STYLES
 					display: block;
 					width: 180px;
 					border-bottom: 1px solid #ccc;
+					background-color: $fallback-darker;
+
 
 					&:hover,
-					&:focus {}
+					&:focus {
+                        background-color: $fallback-lighter;
+                    }
 
 					&:link {}
 				}
@@ -121,7 +138,27 @@ NAVIGATION STYLES
 			display: block;
 		}
 
+		
+
 	} /* end .menu ul li */
+
+
+
+	li.menu-search {
+		float: right;
+		margin-right: 0;
+		border-right: none;
+
+		form {
+			margin-top: 2px;
+			width: 100%;
+			text-align: right;
+			
+			input {
+				margin: 0;
+			}
+		}
+	}
 
 	/* highlight current page */
 	li.current-menu-item,
@@ -133,21 +170,47 @@ NAVIGATION STYLES
 } /* end .nav */
 
 /*********************
+POSTS & CONTENT STYLES
+*********************/
+
+
+#content {
+
+	.hentry {
+
+		header {}
+
+		footer {
+
+			.tags {
+				width: 49.9%;
+				float: right;
+			}
+
+			.categories {
+				width: 49.9%;
+				float: left;
+			}
+		}
+
+	}	
+}
+
+/*********************
 SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
-	margin-top: 2.2em;
+	margin-top: 30px;
 }
 
 	.widgettitle {
-		border-bottom: 2px solid #444;
 		margin-bottom: 0.75em;
 	}
 
 	.widget {
-		padding: 0 10px;
-		margin: 2.2em 0;
+		padding: $text-padding;
+		margin-bottom: 2.762430939%;
 
 		ul {
 			li {
@@ -264,19 +327,20 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-.footer-links {
-	ul {
-		li {
-			a {
-				&:hover {}
-			}
-			/*
-			be careful with the depth of your menus.
-			it's very rare to have multi-depth menus in
-			the footer.
-			*/
-			ul {}
-		}
-	}
-} /* end .footer-links */
+#inner-footer {
 
+	#footer-links {
+
+    	.nav {
+
+    		li {
+    			float: right;
+
+    			a {
+    				background: none;
+    				font-weight: normal;
+    			}
+    		}
+    	}
+    }
+} /* end #inner-footer */

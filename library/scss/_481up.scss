@@ -15,7 +15,21 @@ upon your base.scss styles.
 
 ******************************************************************/
 
+/*********************
+HEADER STYLES
+*********************/
 
+.header {
+
+	#inner-header {
+
+		.heading {
+			.title {
+				font-size: 2em;
+			}
+		}
+	}
+}
 	
 /*********************
 NAVIGATION STYLES

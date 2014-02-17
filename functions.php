@@ -50,6 +50,8 @@ require_once('library/bones.php'); // if you remove this, bones will break
 // Thumbnail sizes
 add_image_size( 'bones-thumb-600', 600, 150, true );
 add_image_size( 'bones-thumb-300', 300, 100, true );
+add_image_size( 'flatdesign_header_image', 1140, 300, true);
+add_image_size( 'flatdesign_post_preview', 847, 222, true);
 /*
 to add more sizes, simply copy a line from above
 and change the dimensions & name. As long as you
@@ -92,6 +94,16 @@ function bones_register_sidebars() {
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',
+	));
+
+	register_sidebar(array(
+		'id' => 'sponsors',
+		'name' => __('Sponsors', 'bonestheme'),
+		'description' => __('The index pages space for sponsored content.', 'bonestheme'),
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
 	));
 
 	/*
@@ -164,12 +176,50 @@ function bones_comments($comment, $args, $depth) {
 // Search Form
 function bones_wpsearch($form) {
 	$form = '<form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
-	<label class="screen-reader-text" for="s">' . __('Search for:', 'bonestheme') . '</label>
 	<input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="'.esc_attr__('Search the Site...','bonestheme').'" />
-	<input type="submit" id="searchsubmit" value="'. esc_attr__('Search') .'" />
 	</form>';
 	return $form;
 } // don't remove this bracket!
 
+// Add Search Form to Menu
+add_filter('wp_nav_menu_items','add_search_box', 10, 2);
+function add_search_box($items, $args) {
+	if ($args->theme_location == 'main-nav') { // add only to header navigation
+        ob_start();
+        get_search_form();
+        $searchform = ob_get_contents();
+        ob_end_clean();
 
+        $items .= '<li id="menu-search" class="menu-item menu-item-type-search menu-search">' . $searchform . '</li>';
+	}
+
+    return $items;
+}
+
+/************* HEADER IMAGE *********************/
+
+function get_flatdesign_header_image() {
+
+	// Check to see if the header image has been removed
+	$header_image = get_header_image('flatdesign_header_image');
+	if ( $header_image ) {
+		// We need to figure out what the minimum width should be for our featured image.
+		// This result would be the suggested width if the theme were to implement flexible widths.
+		$header_image_width = get_theme_support( 'custom-header', 'width' );
+
+		// The header image
+		// Check if this is a post or page, if it has a thumbnail, and if it's a big one
+		if ( is_singular() && has_post_thumbnail( $post->ID ) &&
+				( /* $src, $width, $height */ $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), array( $header_image_width, $header_image_width ) ) ) &&
+				$image[1] >= $header_image_width ) {
+			// Houston, we have a new header image!
+			return get_the_post_thumbnail( $post->ID, 'flatdesign_header_image' );
+		} else {
+			$header_image_width  = get_custom_header()->width;
+			$header_image_height = get_custom_header()->height;
+	
+			return "<img width=\"" . $header_image_width ."\" height=\"" . $header_image_height . "\" class=\"header-image attachment-flatdesign_header_image wp-post-image\" src=\"" . $header_image . "\"  />";
+	 	} // end check for featured image or standard header
+	} // end check for removed header image 
+}
 ?>
