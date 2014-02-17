@@ -204,9 +204,9 @@ function bones_theme_support() {
 	// and adding the first header image
 	register_default_headers( array(
 		'sky' => array(
-			'url' => '%s/library/images/headers/sky-1140-300.jpg',
-			'thumbnail_url' => '%s/library/images/headers/sky-thumbnail.jpg',
-			'description' => __( 'Sky', 'flatdesign' )
+			'url' => '%s/library/images/headers/default-1140-300.jpg',
+			'thumbnail_url' => '%s/library/images/headers/default-300-79.jpg',
+			'description' => __( 'Default image', 'flatdesign' )
 		)
 	) );
 
