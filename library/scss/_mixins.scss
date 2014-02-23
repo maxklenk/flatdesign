@@ -99,8 +99,22 @@ $border-size: 0.2em;
 TYPOGRAPHY
 *********************/
 
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Semibold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 $sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
+$source-sans-pro:   "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 
 /* 	To embed your own fonts, use this syntax
@@ -268,7 +282,7 @@ BUTTONS
 *********************/
 
 .button, .button:visited {
-	font-family: $sans-serif;
+	font-family: $source-sans-pro;
 	border: 1px solid darken($link-color, 13%);
 	border-top-color: darken($link-color, 7%);
 	border-left-color: darken($link-color, 7%);
