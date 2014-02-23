@@ -5,8 +5,14 @@
 				<div id="inner-content" class="wrap clearfix">
 
 						<div id="main" class="ninecol first clearfix" role="main">
-
+							<?php $count = 0; ?>
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+								<?php if ( is_active_sidebar( 'sponsors' ) && $count++ == 2) : ?>
+
+									<?php dynamic_sidebar( 'sponsors' ); ?>
+
+								<?php endif; ?>
 
 								<?php get_template_part('post'); ?>
 

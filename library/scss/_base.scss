@@ -39,7 +39,13 @@ style a page via class
 	.search-no-results {}           /* no results search page */
 	.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */
 .error404 {}                      /* 404 page */
-.single {}                        /* single post page */
+.single, .page {
+	.hentry {
+		header {
+			padding: 0 $text-padding;
+		}
+	}
+}                        /* single post page */
 	.postid-1 {}                    /* individual post page by id (i.e. body.postid-73) */
 	.single-paged-1 {}              /* individual paged single (i.e. body.single-paged-3) */
 .attachment {}                    /* attatchment page */
@@ -166,16 +172,19 @@ HEADER STYLES
 		
 			.logo {
 				right: 0;
-				height: 1.5em;
+				height: 100%;
 
 				font-size: 3em;
 				position: absolute;
-				margin: .5em;
-				
-				padding-left: 1.5em;
+
 				background-image: url(../images/header-logo.svg);
 				background-repeat: no-repeat;
-				background-size: 1.5em;     
+
+				margin: .2em;
+				padding-left: 1.2em;
+				background-size: 1.2em;  
+				-webkit-transform: translateZ(0);
+-ms-transform: translateZ(0);   
 			}
 
 			/* resize image responsive */
@@ -194,7 +203,7 @@ HEADER STYLES
 				margin: 0;
 				padding-left: 5px;
 
-				font-size: 1em;
+				font-size: 1.5em;
 				white-space: nowrap;
 			}
 		}
@@ -363,6 +372,7 @@ POSTS & CONTENT STYLES
 					height: auto;
 					display: block;
 					width: 100%;
+					margin: 0;
 				}
 
 				/* text overlay */
@@ -373,7 +383,8 @@ POSTS & CONTENT STYLES
 					@include css-horizontal-right-gradient(rgba(26, 91, 121, 0.7), rgba(26, 91, 121, 0.0), 80%);
 					
 					margin: 0;
-					padding-left: 5px;
+					padding-left: $text-padding;
+					padding-right: 50px;
 					
 					white-space: nowrap;
 					max-width: 100%;

@@ -96,6 +96,16 @@ function bones_register_sidebars() {
 		'after_title' => '</h4>',
 	));
 
+	register_sidebar(array(
+		'id' => 'sponsors',
+		'name' => __('Sponsors', 'bonestheme'),
+		'description' => __('The index pages space for sponsored content.', 'bonestheme'),
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	));
+
 	/*
 	to add more sidebars or widgetized areas, just copy
 	and edit the above sidebar code. In order to call
