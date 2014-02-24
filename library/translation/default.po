@@ -1,371 +1,259 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: wp theme bones\n"
+"Project-Id-Version: wp theme flatdesign\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-02 22:11+0100\n"
+"POT-Creation-Date: 2014-02-24 18:11+0100\n"
 "PO-Revision-Date: \n"
-"Language-Team: fulgor <frag.fulgor@gmail.com>\n"
-"Language-Team: fulgor <frag.fulgor@gmail.com>\n"
+"Last-Translator: \n"
+"Language-Team: maxklenk <max@klenk.biz>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n\n"
-"X-Poedit-Basepath: /home/fulgor/GIT/bones\n"
-"Last-Translator: \n"
-"X-Poedit-SearchPath-0: /home/fulgor/GIT/bones\n"
+"X-Poedit-Basepath: /home/mk/dev/ieee/de/wp-content/themes/flatdesign\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:13
+msgid "Epic 404 - Article Not Found"
+msgstr ""
+
+#: 404.php:19
+msgid ""
+"The article you were looking for was not found, but maybe try looking again!"
+msgstr ""
+
+#: post.php:34 single.php:30
+msgid "Categories"
+msgstr ""
+
+#: post.php:38 page.php:24 single.php:34
+msgid "Tags"
+msgstr ""
+
+#: page.php:36 single.php:49 index.php:36 archive.php:65
+msgid "Oops, Post Not Found!"
+msgstr ""
+
+#: page.php:39 single.php:52 index.php:39 archive.php:68
+msgid "Uh Oh. Something is missing. Try double checking things."
+msgstr ""
+
+#: functions.php:81
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:82
+msgid "The first (primary) sidebar."
+msgstr ""
+
+#: functions.php:91
+msgid "Footer"
+msgstr ""
+
+#: functions.php:92
+msgid "The footer."
+msgstr ""
+
+#: functions.php:101
+msgid "Sponsors"
+msgstr ""
+
+#: functions.php:102
+msgid "The index pages space for sponsored content."
+msgstr ""
+
+#: functions.php:157
+msgid "F jS, Y"
+msgstr ""
+
+#: functions.php:158
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:162
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: search.php:8
+msgid "Search Results for:"
+msgstr ""
+
+#: search.php:21 index.php:26 archive.php:55
+msgid "&laquo; Older Entries"
+msgstr ""
+
+#: search.php:22 index.php:27 archive.php:56
+msgid "Newer Entries &raquo;"
+msgstr ""
+
+#: search.php:31
+msgid "Sorry, No Results."
+msgstr ""
+
+#: search.php:34
+msgid "Try your search again."
+msgstr ""
 
 #: comments.php:12
 msgid "This post is password protected. Enter the password to view comments."
 msgstr ""
 
-#: comments.php:23
-msgid "Response"
+#: comments.php:22
+msgid "<span>No</span> Responses"
 msgstr ""
 
-#: comments.php:24
-msgid "Responses"
+#: comments.php:22
+msgid "<span>One</span> Response"
 msgstr ""
 
-#: comments.php:25
-msgid "One"
+#: comments.php:22
+msgid "<span>%</span> Response"
 msgstr ""
 
-#: comments.php:26
-msgid "No"
-msgstr ""
-
-#: comments.php:32
-msgid "to"
-msgstr ""
-
-#: comments.php:59
+#: comments.php:50
 msgid "Comments are closed."
 msgstr ""
 
-#: comments.php:70
+#: comments.php:61
 msgid "Leave a Reply"
 msgstr ""
 
-#: comments.php:70
+#: comments.php:61
 #, php-format
 msgid "Leave a Reply to %s"
 msgstr ""
 
-#: comments.php:78
-msgid "You must be"
+#: comments.php:69
+#, php-format
+msgid "You must be %1$slogged in%2$s to post a comment."
 msgstr ""
 
-#: comments.php:78
-msgid "logged in"
-msgstr ""
-
-#: comments.php:78
-msgid "to post a comment"
-msgstr ""
-
-#: comments.php:86
+#: comments.php:77
 msgid "Logged in as"
 msgstr ""
 
-#: comments.php:86
+#: comments.php:77
 msgid "Log out of this account"
 msgstr ""
 
-#: comments.php:86
+#: comments.php:77
 msgid "Log out"
 msgstr ""
 
-#: comments.php:93
+#: comments.php:77
+msgid "&raquo;"
+msgstr ""
+
+#: comments.php:84
 msgid "Name"
 msgstr ""
 
-#: comments.php:93 comments.php:98
+#: comments.php:84 comments.php:89
 msgid "(required)"
 msgstr ""
 
-#: comments.php:94
-msgid "Your Name"
+#: comments.php:85
+msgid "Your Name*"
 msgstr ""
 
-#: comments.php:98
-msgid "Email"
+#: comments.php:89
+msgid "Mail"
 msgstr ""
 
-#: comments.php:99
-msgid "Your Email"
+#: comments.php:90
+msgid "Your E-Mail*"
 msgstr ""
 
-#: comments.php:100
-msgid "will not be published"
+#: comments.php:91
+msgid "(will not be published)"
 msgstr ""
 
-#: comments.php:104
+#: comments.php:95
 msgid "Website"
 msgstr ""
 
-#: comments.php:105
-msgid "Your Website"
+#: comments.php:96
+msgid "Got a website?"
 msgstr ""
 
-#: comments.php:112
-msgid "Your Comment Here..."
+#: comments.php:103
+msgid "Your Comment here..."
 msgstr ""
 
-#: comments.php:115
-msgid "Submit Comment"
+#: comments.php:106
+msgid "Submit"
 msgstr ""
 
-#: comments.php:120
+#: comments.php:111
 msgid "You can use these tags"
 msgstr ""
 
-#: header.php:23
-#, php-format
-msgid "Page %s"
-msgstr ""
-
-#: taxonomy-custom_cat.php:22 archive.php:9
+#: archive.php:11
 msgid "Posts Categorized:"
 msgstr ""
 
-#: taxonomy-custom_cat.php:32 embed-post_meta.php:1 single-custom_type.php:30
-msgid "Posted"
-msgstr ""
-
-#: taxonomy-custom_cat.php:32 embed-post_meta.php:1 single-custom_type.php:30
-msgid "by"
-msgstr ""
-
-#: taxonomy-custom_cat.php:32 embed-post_meta.php:1 single-custom_type.php:30
-msgid "filed under"
-msgstr ""
-
-#: taxonomy-custom_cat.php:41
-msgid "Read more"
-msgstr ""
-
-#: functions.php:103
-msgid "(Edit)"
-msgstr ""
-
-#: functions.php:107
-msgid "Your comment is awaiting moderation."
-msgstr ""
-
-#: functions.php:124
-msgid "Search for:"
-msgstr ""
-
-#: functions.php:125
-msgid "Search the Site..."
-msgstr ""
-
-#: 404.php:11
-msgid "Epic 404 - Article Not Found"
-msgstr ""
-
-#: 404.php:17
-msgid ""
-"The article you were looking for was not found, but maybe try looking again!"
-msgstr ""
-
-#: search.php:7
-msgid "Search Results for:"
-msgstr ""
-
-#: search.php:23
-msgid "Read more on"
-msgstr ""
-
-#: archive.php:13
+#: archive.php:16
 msgid "Posts Tagged:"
 msgstr ""
 
-#: archive.php:17 author.php:8
+#: archive.php:25
 msgid "Posts By:"
 msgstr ""
 
-#: archive.php:21
+#: archive.php:30
 msgid "Daily Archives:"
 msgstr ""
 
-#: archive.php:25
+#: archive.php:35
 msgid "Monthly Archives:"
 msgstr ""
 
-#: archive.php:29
+#: archive.php:40
 msgid "Yearly Archives:"
 msgstr ""
 
-#: single-custom_type.php:43
-msgid "Custom Tags"
-msgstr ""
-
-#: embed-tags.php:3
-msgid "Tag"
-msgstr ""
-
-#: embed-tags.php:3
-msgid "Tags"
-msgstr ""
-
-#: image.php:20
-msgid "Read the rest of this entry"
-msgstr ""
-
-#: image.php:38
-msgid "Sorry, no attachments matched your criteria."
-msgstr ""
-
-#: embed-prev_next.php:3
-msgid "&laquo; Older Entries"
-msgstr ""
-
-#: embed-prev_next.php:4
-msgid "Newer Entries &raquo;"
-msgstr ""
-
-#: footer.php:9
-msgid "is powered by"
-msgstr ""
-
-#: embed-not_found.php:3
-msgid "Not Found"
-msgstr ""
-
-#: embed-not_found.php:6
-msgid "Sorry, but the requested resource was not found on this site."
-msgstr ""
-
-#: sidebar.php:15
+#: sidebar.php:12
 msgid "Please activate some Widgets."
 msgstr ""
 
-#: library/bones.php:52
-msgid "Read more &raquo;"
+#: library/admin.php:80
+msgid ""
+"<span id=\"footer-thankyou\">Developed by <a href=\"http://http://github.com/"
+"sebastianhenneberg\" target=\"_blank\">Sebastian Henneberg</a> and <a href="
+"\"http://http://github.com/maxklenk\" target=\"_blank\">Max Klenk</a></span>."
 msgstr ""
 
-#: library/custom-post-type.php:24
-msgid "Custom Types"
+#: library/bones.php:209
+msgid "Default image"
 msgstr ""
 
-#: library/custom-post-type.php:25
-msgid "Custom Post"
+#: library/bones.php:234 library/bones.php:251
+msgid "The Main Menu"
 msgstr ""
 
-#: library/custom-post-type.php:26
-msgid "Add New"
+#: library/bones.php:235 library/bones.php:269
+msgid "Footer Links"
 msgstr ""
 
-#: library/custom-post-type.php:27
-msgid "Add New Custom Type"
+#: library/bones.php:321
+msgid "No Related Posts Yet!"
 msgstr ""
 
-#: library/custom-post-type.php:28
-msgid "Edit"
+#: library/bones.php:365
+msgid "First"
 msgstr ""
 
-#: library/custom-post-type.php:29
-msgid "Edit Post Types"
+#: library/bones.php:382
+msgid "Last"
 msgstr ""
 
-#: library/custom-post-type.php:30
-msgid "New Post Type"
+#: library/bones.php:401
+msgid "Read"
 msgstr ""
 
-#: library/custom-post-type.php:31
-msgid "View Post Type"
-msgstr ""
-
-#: library/custom-post-type.php:32
-msgid "Search Post Type"
-msgstr ""
-
-#: library/custom-post-type.php:33
-msgid "Nothing found in the Database."
-msgstr ""
-
-#: library/custom-post-type.php:34
-msgid "Nothing found in Trash"
-msgstr ""
-
-#: library/custom-post-type.php:37
-msgid "This is the example custom post type"
-msgstr ""
-
-#: library/custom-post-type.php:73
-msgid "Custom Categories"
-msgstr ""
-
-#: library/custom-post-type.php:74
-msgid "Custom Category"
-msgstr ""
-
-#: library/custom-post-type.php:75
-msgid "Search Custom Categories"
-msgstr ""
-
-#: library/custom-post-type.php:76
-msgid "All Custom Categories"
-msgstr ""
-
-#: library/custom-post-type.php:77
-msgid "Parent Custom Category"
-msgstr ""
-
-#: library/custom-post-type.php:78
-msgid "Parent Custom Category:"
-msgstr ""
-
-#: library/custom-post-type.php:79
-msgid "Edit Custom Category"
-msgstr ""
-
-#: library/custom-post-type.php:80
-msgid "Update Custom Category"
-msgstr ""
-
-#: library/custom-post-type.php:81
-msgid "Add New Custom Category"
-msgstr ""
-
-#: library/custom-post-type.php:82
-msgid "New Custom Category Name"
-msgstr ""
-
-#: library/custom-post-type.php:95
-msgid "Custom Tag"
-msgstr ""
-
-#: library/custom-post-type.php:96
-msgid "Search Custom Tags"
-msgstr ""
-
-#: library/custom-post-type.php:97
-msgid "All Custom Tags"
-msgstr ""
-
-#: library/custom-post-type.php:98
-msgid "Parent Custom Tag"
-msgstr ""
-
-#: library/custom-post-type.php:99
-msgid "Parent Custom Tag:"
-msgstr ""
-
-#: library/custom-post-type.php:100
-msgid "Edit Custom Tag"
-msgstr ""
-
-#: library/custom-post-type.php:101
-msgid "Update Custom Tag"
-msgstr ""
-
-#: library/custom-post-type.php:102
-msgid "Add New Custom Tag"
-msgstr ""
-
-#: library/custom-post-type.php:103
-msgid "New Custom Tag Name"
+#: library/bones.php:416
+#, php-format
+msgid "Posts by %s"
 msgstr ""
