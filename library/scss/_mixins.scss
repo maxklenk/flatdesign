@@ -82,6 +82,12 @@ $fallback-lighter: #3a7b8e;
 
 $transparent-border: transparent;
 
+// from compass repo: https://github.com/chriseppstein/compass/blob/stable/frameworks/compass/stylesheets/compass/css3/_opacity.scss
+@mixin opacity($opacity) {
+  filter: unquote("progid:DXImageTransform.Microsoft.Alpha(Opacity=#{round($opacity * 100)})");
+  opacity: $opacity;
+}
+
 /*
 Here's a great tutorial on how to
 use color variables properly:

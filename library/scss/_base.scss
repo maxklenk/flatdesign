@@ -366,6 +366,15 @@ POSTS & CONTENT STYLES
 			header {
 				position: relative;
 
+                /* the following two declarations introduce subtle opacity transitions for header images in article overviews */
+                a:hover > * {
+                    @include opacity(1);
+                    @include transition(opacity .2s ease-in-out);
+                }
+
+                a > * {
+                  @include opacity(0.8);
+                }
 
 				/* resize image responsive */
 				img {
