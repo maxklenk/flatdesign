@@ -5,7 +5,7 @@
 				<div id="inner-content" class="wrap clearfix">
 
 					<div id="main" class="ninecol first clearfix" role="main">
-						<h1 class="archive-title"><span><?php _e('Search Results for:', 'bonestheme'); ?></span> <?php echo esc_attr(get_search_query()); ?></h1>
+						<h1 class="archive-title"><span><?php _e('Search Results for:', "bonestheme"); ?></span> <?php echo esc_attr(get_search_query()); ?></h1>
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -34,7 +34,7 @@
 											<p><?php _e("Try your search again.", "bonestheme"); ?></p>
 										</section>
 										<footer class="article-footer">
-												<p><?php _e("This is the error message in the search.php template.", "bonestheme"); ?></p>
+												<p></p>
 										</footer>
 									</article>
 
