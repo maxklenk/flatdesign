@@ -15,7 +15,7 @@
 				the_post_thumbnail('flatdesign_post_preview');
 			} else {
 				?>
-				<img width="847" height="222" src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/headers/sky-847-222.jpg" class="attachment-flatdesign_post_preview wp-post-image" alt="<?php the_title(); ?>">
+				<img width="847" height="222" src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/headers/default-847-222.jpg" class="attachment-flatdesign_post_preview wp-post-image" alt="<?php the_title(); ?>">
 				<?php
 			} 
 			?>
@@ -31,12 +31,12 @@
 
 	<footer class="article-footer">
 		<div class="categories first">
-			<span class="categories-title"> <?php echo __('Categories:', 'bonestheme') ?> </span>
+			<span class="categories-title"> <?php echo __('Categories', 'bonestheme') ?>:</span>
 			<span class="the-categories"> <?php echo get_the_category_list(', ') ?></span>
 		</div>
 		<div class="tags last">
-			<span class="tags-title"><?php echo __('Tags:', 'bonestheme') ?></span>
-			<?php the_tags('<span class="the-tags">', ', ', '</span>'); ?>
+			<span class="tags-title"><?php echo __('Tags', 'bonestheme') ?>:</span>
+			<span class="the-tags"> <?php echo get_the_tag_list('', ', ', '') ?></span>
 		</div>
 	</footer> <!-- end article footer -->
 

@@ -92,15 +92,29 @@ http://sachagreif.com/sass-color-variables/
 PADDING, SPACEING
 *********************/
 
-$text-padding: 0.5em;
+$text-padding: 1em;
 $border-size: 0.2em;
 
 /*********************
 TYPOGRAPHY
 *********************/
 
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Semibold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 $sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
+$source-sans-pro:   "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 
 /* 	To embed your own fonts, use this syntax
@@ -249,6 +263,17 @@ BOX SHADOW
 }
 
 /*********************
+BORDER RADIUS
+*********************/
+
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+/*********************
 BOX SIZING
 *********************/
 
@@ -268,7 +293,7 @@ BUTTONS
 *********************/
 
 .button, .button:visited {
-	font-family: $sans-serif;
+	font-family: $source-sans-pro;
 	border: 1px solid darken($link-color, 13%);
 	border-top-color: darken($link-color, 7%);
 	border-left-color: darken($link-color, 7%);
@@ -312,4 +337,19 @@ BUTTONS
 	&:active {
 		@include css-gradient( darken($bones-blue, 5%), $bones-blue );
 	}
+}
+
+
+/*********************
+CUSTOM
+*********************/
+
+@mixin spotlight() {
+    clear: both;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.55);
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+    background-color: rgb(68, 68, 68);
+    background-image: radial-gradient(50% 75%, transparent, rgba(0, 0, 0, 0.5)), url(../images/footer-bg-pattern.png);
+    box-shadow: inset 0px -0.3em 0.5em rgba(0, 0, 0, 0.2);
 }

@@ -27,12 +27,12 @@
 
 								<footer class="article-footer clearfix">
 									<div class="categories first">
-										<span class="categories-title"> <?php echo __('Categories:', 'bonestheme') ?> </span>
+										<span class="categories-title"> <?php echo __('Categories', 'bonestheme') ?>:</span>
 										<span class="the-categories"> <?php echo get_the_category_list(', ') ?></span>
 									</div>
 									<div class="tags last">
-										<span class="tags-title"><?php echo __('Tags:', 'bonestheme') ?></span>
-										<?php the_tags('<span class="the-tags">', ', ', '</span>'); ?>
+										<span class="tags-title"><?php echo __('Tags', 'bonestheme') ?>:</span>
+										<span class="the-tags"> <?php echo get_the_tag_list('', ', ', '') ?></span>
 									</div>
 								</footer> <!-- end article footer -->
 
@@ -52,7 +52,7 @@
 										<p><?php _e("Uh Oh. Something is missing. Try double checking things.", "bonestheme"); ?></p>
 									</section>
 									<footer class="article-footer">
-											<p><?php _e("This is the error message in the single.php template.", "bonestheme"); ?></p>
+											<p></p>
 									</footer>
 							</article>
 

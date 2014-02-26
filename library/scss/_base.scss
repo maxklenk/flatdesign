@@ -16,7 +16,7 @@ GENERAL STYLES
 *********************/
 
 body {
-	font-family: $sans-serif;
+	font-family: $source-sans-pro;
 	font-size: 100%;
 	line-height: 1.5;
 	color: $white;
@@ -39,7 +39,13 @@ style a page via class
 	.search-no-results {}           /* no results search page */
 	.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */
 .error404 {}                      /* 404 page */
-.single {}                        /* single post page */
+.single, .page {
+	.hentry {
+		header {
+			padding: 0 $text-padding;
+		}
+	}
+}                        /* single post page */
 	.postid-1 {}                    /* individual post page by id (i.e. body.postid-73) */
 	.single-paged-1 {}              /* individual paged single (i.e. body.single-paged-3) */
 .attachment {}                    /* attatchment page */
@@ -108,9 +114,9 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	margin: 0;
 	padding: 0;
-	font-family: $sans-serif;
+	font-family: $source-sans-pro;
 	text-rendering: optimizelegibility;
-	font-weight: 500;
+	font-weight: 400;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -123,7 +129,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 h1, .h1 {
-	font-size: 2.5em;
+	font-size: 2em;
 	line-height: 1.333em;
 	margin: .5em 0;
 }
@@ -145,7 +151,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-	font-size: 0.846em;
+	font-size: .9em;
 	line-height: 2.09em;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -166,16 +172,19 @@ HEADER STYLES
 		
 			.logo {
 				right: 0;
-				height: 1.5em;
+				height: 100%;
 
 				font-size: 3em;
 				position: absolute;
-				margin: .5em;
-				
-				padding-left: 1.5em;
+
 				background-image: url(../images/header-logo.svg);
 				background-repeat: no-repeat;
-				background-size: 1.5em;     
+
+				margin: .2em;
+				padding-left: 1.2em;
+				background-size: 1.2em;  
+				-webkit-transform: translateZ(0);
+                -ms-transform: translateZ(0);
 			}
 
 			/* resize image responsive */
@@ -194,7 +203,7 @@ HEADER STYLES
 				margin: 0;
 				padding-left: 5px;
 
-				font-size: 1em;
+				font-size: 1.5em;
 				white-space: nowrap;
 			}
 		}
@@ -336,6 +345,7 @@ POSTS & CONTENT STYLES
 
 			h1 {
 				margin: 0;
+                font-size: 2.5em;
 			}
 		}
 
@@ -363,6 +373,7 @@ POSTS & CONTENT STYLES
 					height: auto;
 					display: block;
 					width: 100%;
+					margin: 0;
 				}
 
 				/* text overlay */
@@ -373,7 +384,8 @@ POSTS & CONTENT STYLES
 					@include css-horizontal-right-gradient(rgba(26, 91, 121, 0.7), rgba(26, 91, 121, 0.0), 80%);
 					
 					margin: 0;
-					padding-left: 5px;
+					padding-left: $text-padding;
+					padding-right: 50px;
 					
 					white-space: nowrap;
 					max-width: 100%;
@@ -460,7 +472,11 @@ POSTS & CONTENT STYLES
 			}
 
 
-			ul, ol, table, dl {}
+			ul, ol, dl {
+                font-size: 1rem;
+                line-height: 1.6;
+                list-style-position: outside;
+            }
 
 			ul, ol {
 
@@ -469,39 +485,42 @@ POSTS & CONTENT STYLES
 			}
 
 			ul {
+                margin-left: 1.1rem;
+                list-style-type: disc;
 
 				li {}
 
 			}
 
 			ol {
+                margin-left: 1.4rem;
+                list-style-type: decimal;
 
 				li {}
 
 			}
 
 			blockquote {
-
-				&:before {}
-
+                font-style: italic;
 			}
 
-			dl {}
+			dl, dt {
+                margin-bottom: 0.3rem;
+                font-weight: bold;
+            }
 
-			dt {}
-
-			dd {
-				margin-left: 0;
-				font-size: 0.9em;
-				color: #787878;
-				margin-bottom: 1.5em;
-			}
+			dl, dd {
+                margin-bottom: 0.66667rem;
+            }
 
 			img {
-				margin: 0 0 1.5em 0;
 				max-width: 100%;
 				height: auto;
 			}
+
+            img.nomargin {
+                margin: 0 0 1.5em 0;
+            }
 
 			/*
 			image alignment on a screen this size may be
@@ -959,6 +978,18 @@ SIDEBARS & ASIDES
 
 	.widgettitle {}
 
+    .widget.inline-sponsors {
+        @include spotlight();
+        @include border-radius(.4em);
+    }
+
+    .widget.inline-sponsors .widgettitle {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: .8em;
+        margin-bottom: 0;
+    }
+
 	.widget {
 		@include css-diagonal-gradient($transparent-lighter, $transparent-light);
 		@include dark-shadow();
@@ -987,13 +1018,7 @@ FOOTER STYLES
 *********************/
 
 .footer {
-	clear: both;
-	width: 100%;
-	color: rgba(255, 255, 255, 0.55);
-	text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
-	background-color: rgb(68, 68, 68);
-	background-image: radial-gradient(50% 75%, transparent, rgba(0, 0, 0, 0.5)), url(../images/footer-bg-pattern.png);
-	box-shadow: inset 0px -0.3em 0.5em rgba(0, 0, 0, 0.2);
+    @include spotlight();
 }
 	#inner-footer {
 		padding-top: 1em;

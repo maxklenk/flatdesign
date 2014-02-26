@@ -100,10 +100,10 @@ function bones_register_sidebars() {
 		'id' => 'sponsors',
 		'name' => __('Sponsors', 'bonestheme'),
 		'description' => __('The index pages space for sponsored content.', 'bonestheme'),
-		'before_widget' => '',
-		'after_widget' => '',
-		'before_title' => '',
-		'after_title' => '',
+        'before_widget' => '<div id="%1$s" class="widget %2$s inline-sponsors">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class="widgettitle">',
+        'after_title' => '</h4>',
 	));
 
 	/*
@@ -153,7 +153,7 @@ function bones_comments($comment, $args, $depth) {
 				?>
 				<img data-gravatar="http://www.gravatar.com/avatar/<?php echo md5($bgauthemail); ?>?s=32" class="load-gravatar avatar avatar-48 photo" height="32" width="32" src="<?php echo get_template_directory_uri(); ?>/library/images/nothing.gif" />
 				<!-- end custom gravatar call -->
-				<?php printf(__('<cite class="fn">%s</cite>', 'bonestheme'), get_comment_author_link()) ?>
+				<?php printf('<cite class="fn">%s</cite>', get_comment_author_link()) ?>
 				<time datetime="<?php echo comment_time('Y-m-j'); ?>"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php comment_time(__('F jS, Y', 'bonestheme')); ?> </a></time>
 				<?php edit_comment_link(__('(Edit)', 'bonestheme'),'  ','') ?>
 			</header>

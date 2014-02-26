@@ -8,3 +8,22 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop. 
 
 ******************************************************************/
+
+/*********************
+HEADER STYLES
+*********************/
+
+.header {
+
+	#inner-header {
+
+		.heading {
+			
+			.logo {
+				margin: .5em;
+				padding-left: 2em;
+				background-size: 2em;     
+			}
+		}
+	}
+}
