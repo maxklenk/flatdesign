@@ -970,6 +970,18 @@ SIDEBARS & ASIDES
 
 	.widgettitle {}
 
+    .widget.inline-sponsors {
+        @include spotlight();
+        @include border-radius(.4em);
+    }
+
+    .widget.inline-sponsors .widgettitle {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: .8em;
+        margin-bottom: 0;
+    }
+
 	.widget {
 		@include css-diagonal-gradient($transparent-lighter, $transparent-light);
 		@include dark-shadow();
@@ -998,13 +1010,7 @@ FOOTER STYLES
 *********************/
 
 .footer {
-	clear: both;
-	width: 100%;
-	color: rgba(255, 255, 255, 0.55);
-	text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
-	background-color: rgb(68, 68, 68);
-	background-image: radial-gradient(50% 75%, transparent, rgba(0, 0, 0, 0.5)), url(../images/footer-bg-pattern.png);
-	box-shadow: inset 0px -0.3em 0.5em rgba(0, 0, 0, 0.2);
+    @include spotlight();
 }
 	#inner-footer {
 		padding-top: 1em;

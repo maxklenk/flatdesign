@@ -100,10 +100,10 @@ function bones_register_sidebars() {
 		'id' => 'sponsors',
 		'name' => __('Sponsors', 'bonestheme'),
 		'description' => __('The index pages space for sponsored content.', 'bonestheme'),
-		'before_widget' => '',
-		'after_widget' => '',
-		'before_title' => '',
-		'after_title' => '',
+        'before_widget' => '<div id="%1$s" class="widget %2$s inline-sponsors">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class="widgettitle">',
+        'after_title' => '</h4>',
 	));
 
 	/*
