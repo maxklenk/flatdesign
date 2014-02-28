@@ -225,13 +225,13 @@ msgstr "Bitte nutzen Sie doch ein paar Widgets."
 
 #: library/admin.php:80
 msgid ""
-"<span id=\"footer-thankyou\">Developed by <a href=\"http://http://github.com/"
+"<span id=\"footer-thankyou\">Developed by <a href=\"http://github.com/"
 "sebastianhenneberg\" target=\"_blank\">Sebastian Henneberg</a> and <a href="
-"\"http://http://github.com/maxklenk\" target=\"_blank\">Max Klenk</a></span>."
+"\"http://github.com/maxklenk\" target=\"_blank\">Max Klenk</a></span>."
 msgstr ""
-"<span id=\"footer-thankyou\">Entwickelt von <a href=\"http://http://github."
+"<span id=\"footer-thankyou\">Entwickelt von <a href=\"http://github."
 "com/sebastianhenneberg\" target=\"_blank\">Sebastian Henneberg</a> und <a "
-"href=\"http://http://github.com/maxklenk\" target=\"_blank\">Max Klenk</a></"
+"href=\"http://github.com/maxklenk\" target=\"_blank\">Max Klenk</a></"
 "span>."
 
 #: library/bones.php:209
