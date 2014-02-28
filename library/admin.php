@@ -77,7 +77,7 @@ you like.
 
 // Custom Backend Footer
 function bones_custom_admin_footer() {
-	_e('<span id="footer-thankyou">Developed by <a href="http://http://github.com/sebastianhenneberg" target="_blank">Sebastian Henneberg</a> and <a href="http://http://github.com/maxklenk" target="_blank">Max Klenk</a></span>.', 'bonestheme');
+	_e('<span id="footer-thankyou">Developed by <a href="http://github.com/sebastianhenneberg" target="_blank">Sebastian Henneberg</a> and <a href="http://github.com/maxklenk" target="_blank">Max Klenk</a></span>.', 'bonestheme');
 }
 
 // adding it to the admin area

@@ -220,9 +220,9 @@ msgstr ""
 
 #: library/admin.php:80
 msgid ""
-"<span id=\"footer-thankyou\">Developed by <a href=\"http://http://github.com/"
+"<span id=\"footer-thankyou\">Developed by <a href=\"http://github.com/"
 "sebastianhenneberg\" target=\"_blank\">Sebastian Henneberg</a> and <a href="
-"\"http://http://github.com/maxklenk\" target=\"_blank\">Max Klenk</a></span>."
+"\"http://github.com/maxklenk\" target=\"_blank\">Max Klenk</a></span>."
 msgstr ""
 
 #: library/bones.php:209
