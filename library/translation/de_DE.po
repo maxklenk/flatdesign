@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp theme flatdesign\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-24 18:06+0100\n"
+"POT-Creation-Date: 2014-04-13 20:20+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: maxklenk <max@klenk.biz>\n"
@@ -78,6 +78,10 @@ msgstr "(Bearbeiten)"
 #: functions.php:162
 msgid "Your comment is awaiting moderation."
 msgstr "Ihr Kommentar wird noch moderiert."
+
+#: functions.php:179
+msgid "Search the Site..."
+msgstr "durchsuchen ..."
 
 #: search.php:8
 msgid "Search Results for:"
@@ -229,10 +233,9 @@ msgid ""
 "sebastianhenneberg\" target=\"_blank\">Sebastian Henneberg</a> and <a href="
 "\"http://github.com/maxklenk\" target=\"_blank\">Max Klenk</a></span>."
 msgstr ""
-"<span id=\"footer-thankyou\">Entwickelt von <a href=\"http://github."
-"com/sebastianhenneberg\" target=\"_blank\">Sebastian Henneberg</a> und <a "
-"href=\"http://github.com/maxklenk\" target=\"_blank\">Max Klenk</a></"
-"span>."
+"<span id=\"footer-thankyou\">Entwickelt von <a href=\"http://github.com/"
+"sebastianhenneberg\" target=\"_blank\">Sebastian Henneberg</a> und <a href="
+"\"http://github.com/maxklenk\" target=\"_blank\">Max Klenk</a></span>."
 
 #: library/bones.php:209
 msgid "Default image"
@@ -419,9 +422,6 @@ msgstr "Einträge von %s"
 
 #~ msgid "Search for:"
 #~ msgstr "Suche nach:"
-
-#~ msgid "Search the Site..."
-#~ msgstr "durchsuchen ..."
 
 #~ msgid "Read more on"
 #~ msgstr "Lesen Sie mehr über"
