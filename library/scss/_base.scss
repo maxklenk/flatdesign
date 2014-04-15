@@ -42,7 +42,9 @@ style a page via class
 .single, .page {
 	.hentry {
 		header {
-			padding: 0 $text-padding;
+			.page-title, .single-title {
+				padding: 0 0.5 * $text-padding;
+			}
 		}
 	}
 }                        /* single post page */
