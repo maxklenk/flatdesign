@@ -1008,6 +1008,9 @@ SIDEBARS & ASIDES
     }
 
 	.widget {
+		padding: $text-padding;
+		margin-bottom: 2.762430939%;
+
 		@include css-diagonal-gradient($transparent-lighter, $transparent-light);
 		@include dark-shadow();
 
@@ -1029,6 +1032,15 @@ SIDEBARS & ASIDES
 		}
 
 	}
+
+	// render sidebar elemens smaller
+	.sixcol {
+		float: left;
+		position: relative;
+		margin-left: 2.762430939%;
+		width: 21.546961326%;
+	}
+
 
 /*********************
 FOOTER STYLES
