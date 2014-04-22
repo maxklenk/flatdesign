@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp theme flatdesign\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-13 20:20+0100\n"
+"POT-Creation-Date: 2014-04-15 08:51+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: maxklenk <max@klenk.biz>\n"
@@ -226,6 +226,10 @@ msgstr "Jahres-Archiv:"
 #: sidebar.php:12
 msgid "Please activate some Widgets."
 msgstr "Bitte nutzen Sie doch ein paar Widgets."
+
+#: header.php:66
+msgid "Show Menu"
+msgstr "Menü anzeigen"
 
 #: library/admin.php:80
 msgid ""

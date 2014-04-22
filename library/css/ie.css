@@ -656,17 +656,12 @@ SIDEBARS & ASIDES
   margin-bottom: 0.75em;
 }
 
-/* line 214, ../scss/_768up.scss */
-.widget {
-  padding: 1em;
-  margin-bottom: 2.762430939%;
-}
-/* line 219, ../scss/_768up.scss */
+/* line 217, ../scss/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 227, ../scss/_768up.scss */
+/* line 225, ../scss/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -691,11 +686,11 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 339, ../scss/_768up.scss */
+/* line 337, ../scss/_768up.scss */
 #inner-footer #footer-links .nav li {
   float: right;
 }
-/* line 342, ../scss/_768up.scss */
+/* line 340, ../scss/_768up.scss */
 #inner-footer #footer-links .nav li a {
   background: none;
   font-weight: normal;

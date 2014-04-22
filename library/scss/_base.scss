@@ -42,7 +42,9 @@ style a page via class
 .single, .page {
 	.hentry {
 		header {
-			padding: 0 $text-padding;
+			.page-title, .single-title {
+				padding: 0 0.5 * $text-padding;
+			}
 		}
 	}
 }                        /* single post page */
@@ -331,6 +333,13 @@ and more scalable.
 	}  /* end current highlighters */
 
 } /* end .nav */
+
+#menu-toggle {
+	background-color: rgba(0, 0, 0, 0.25);
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 0.7em;
+}
 
 
 /*********************
@@ -1001,6 +1010,9 @@ SIDEBARS & ASIDES
     }
 
 	.widget {
+		padding: $text-padding;
+		margin-bottom: 2.762430939%;
+
 		@include css-diagonal-gradient($transparent-lighter, $transparent-light);
 		@include dark-shadow();
 
@@ -1022,6 +1034,15 @@ SIDEBARS & ASIDES
 		}
 
 	}
+
+	// render sidebar elemens smaller
+	.sixcol {
+		float: left;
+		position: relative;
+		margin-left: 2.762430939%;
+		width: 21.546961326%;
+	}
+
 
 /*********************
 FOOTER STYLES
