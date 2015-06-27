@@ -1,18 +1,10 @@
 ## FlatDesign
 
-Responsive Wordpress Theme
+[Award Winning](https://www.facebook.com/ieee.r8sac/photos/a.10150200361831912.331391.282925976911/10153304357706912/) Responsive Wordpress Theme based on [Bones](https://github.com/eddiemachado/bones)
 
-Based on Bones
-> A Lightweight Wordpress Development Theme
+## Contributors
+- [Max Klenk](http://github.com/maxklenk) (Design & Development)
+- [Sebastian Henneberg](http://github.com/sebastianhenneberg) (Development)
 
-
-Designed by Max Klenk
-
-<http://github.com/maxklenk>
-
-
-Developed by Sebastian Henneberg and Max Klenk
-
-<http://github.com/sebastianhenneberg>
-
-<http://github.com/maxklenk>
+## Preview
+[![Screenshot](https://github.com/maxklenk/flatdesign/raw/master/screenshot.png)]
