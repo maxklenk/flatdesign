@@ -6,5 +6,7 @@
 - [Max Klenk](http://github.com/maxklenk) (Design & Development)
 - [Sebastian Henneberg](http://github.com/sebastianhenneberg) (Development)
 
-## Preview
-[![Screenshot](https://github.com/maxklenk/flatdesign/raw/master/screenshot.png)]
+## Examples
+
+Website of the [IEEE Student Branch Passau](http://ieee-passau.org) with customizations of a [child theme](https://github.com/maxklenk/flatdesign-child-ieee).  
+![Screenshot](https://github.com/maxklenk/flatdesign/raw/master/ieee-passau.org.png)
